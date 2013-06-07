@@ -1,0 +1,12 @@
+body
+{
+	font-size: 9pt;
+	font-family: Arial,Verdana,Helvetica;
+	width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.canvasball #canvas {
+    border: 1px solid;
+}

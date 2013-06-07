@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Canvas Ball</title>
+    <meta name="tags" content="" />
+    <meta name="keywords" content="smiles game hug" />
+    <meta name="description" content="HugMe" />
+    <meta name="author" content="António Pedro" />
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.1.0/css/ui-light.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+
+    <link href="/css/canvasball.css" rel="stylesheet" />
+    <script src="/js/paddle.js"></script>
+    <script src="/js/smile.js"></script>
+    <script src="/js/canvasball.js"></script>
+    <script src="/js/circle.js"></script>
+</head>
+<body>
+    <div class="canvasball fragment">
+        <header aria-label="Header content" role="banner">
+            <button class="win-backbutton" aria-label="Back" disabled type="button"></button>
+            <h1 class="titlearea win-type-ellipsis">
+                <span class="pagetitle">Canvas Ball</span>
+            </h1>
+            <img id="smile" src="images/64_21.png" />
+        </header>
+        <section aria-label="Main content" role="main">
+            <canvas id="canvas" width="960" height="480" onkeydown="SomeJavaScriptCode"></canvas>
+        </section>
+    </div>
+</body>
+</html>
