@@ -9,6 +9,9 @@
         this.angle_vel = 0;
         this.ctx = ctx;
         this.thrust = false;
+        this.missile = null;
+        this.imageSize = [image.width / 2, image.height];
+        this.imageCenter = [image.width / 4, image.height/2];
     },
     {
         getInfo : function () {
@@ -16,6 +19,8 @@
         },
         draw: function () {
             Ship.drawImage(this.ctx, this.shipImage, this.x, this.y, this.angle, this.thrust);
+            if (this.missile!=null)
+                this.missile.draw();
         },
         step: function () {
             // keep ship in domain
@@ -43,10 +48,25 @@
             this.velocity[0] *= (1 - 0.01);
             this.velocity[1] *= (1 - 0.01);
             
+            if (this.missile != null)
+                this.missile.step();
 
         },
         rotate: function (vel) {
             this.angle_vel = vel;
+        },
+        getCanonTipPos: function (fv) {
+            return [this.x + this.imageCenter[0] + (this.imageSize[0] / 2 * fv[0]), (this.y + this.imageCenter[1]) + (this.imageSize[1] / 2 * fv[1])];
+        },
+        getMissileVelocity: function (fv) {
+            return [this.velocity[0] + 6 * fv[0], this.velocity[1] + 6 * fv[1]];
+        },
+        shoot: function () {
+            var fv = Ship.getAngleVector(this.angle)
+            var missilePosition = this.getCanonTipPos(fv);
+            var missileVelocity = this.getMissileVelocity(fv);
+
+            this.missile = new Asteroids.Missile(this.ctx, missilePosition[0], missilePosition[1], missileVelocity);
         },
         accelerate: function (thrust) {
             this.thrust = thrust;
@@ -60,13 +80,12 @@
             return [Math.cos(ang), Math.sin(ang)];
         },
         drawImage: function (ctx, image, x, y, angle, thrust) {
-            var pos = [x, y];
             // save the current co-ordinate system 
             // before we screw with it
             ctx.save();
 
             // move to the middle of where we want to draw our image
-            ctx.translate(pos[0], pos[1]);
+            ctx.translate(x, y);
             ctx.translate(image.width/4, image.height/2);
 
             // rotate around that point, converting our 

@@ -47,6 +47,9 @@
         }
         function doKeyDown(e) {
             switch (e.key) {
+                case "Spacebar":
+                    ship.shoot();
+                    break;
                 case "Right":
                     ship.rotate(0.05);
                     break;
