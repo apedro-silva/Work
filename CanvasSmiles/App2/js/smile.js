@@ -1,11 +1,12 @@
 ﻿var Smile= WinJS.Class.define(
-    function (canvas, image, x, y, velocity, objects) {
+    function (canvas, image, x, y, velocity) {
         this.image = image;
         this.x = x;
         this.y = y;
         this.c = canvas;
+        this.position = [x, y];
         this.velocity = velocity;
-        this.objects = objects;
+        this.inCollision = false;
     },
     {
         getInfo : function () {
@@ -14,20 +15,42 @@
         draw : function (canvas) {
             canvas.drawImage(this.image, this.x, this.y);
         },
-        step : function () {
-            if (this.x > (this.c.canvas.width - this.image.width+6) || this.x <= -8) this.velocity[0] *= -1;
-            if (this.y > (this.c.canvas.height - this.image.height + 6) || this.y <= -10) this.velocity[1] *= -1;
-            var x = this.x;
-            var y = this.y;
-            var velocity = this.velocity;
+        step: function (objects) {
+            var inCollision = false;
+            var vel = [this.velocity[0], this.velocity[1]];
+            if (this.x > (this.c.canvas.width - this.image.width + 6) || this.x <= -8) {
+                inCollision = true;
+                vel[0] *= -1;
+            }
+            if (this.y > (this.c.canvas.height - this.image.height + 6) || this.y <= -10) {
+                inCollision = true;
+                vel[1] *= -1;
+            }
 
-            this.objects.forEach(function (paddle) {
-                if ((x <= paddle.position[0] && paddle.position[0] <= x + 58) && (y+32 >= paddle.position[1]) && ((y+32) <= (paddle.position[1] + paddle.position[3])))
-                    velocity[0] = 0;
+            a = { x: this.x, y: this.y, width: 57, height: 57 };
+
+            objects.forEach(function (paddle) {
+                b = { x: paddle.position[0], y: paddle.position[1], width: paddle.position[2], height: paddle.position[3] };
+
+                if (Smile.inCollision(a, b)) {
+                    vel[0] *= -1;
+                    inCollision = true;
+                }
+
             });
 
-            this.x += velocity[0];
-            this.y += velocity[1];
+            if (this.inCollision) {
+                this.x += this.velocity[0];
+                this.y += this.velocity[1];
+                this.position = [this.x, this.y];
+            }
+            else {
+                this.x += vel[0];
+                this.y += vel[1];
+                this.position = [this.x, this.y];
+                this.velocity = [vel[0], vel[1]];
+            }
+            this.inCollision = inCollision;
         },
         stop: function () {
             if (this.velocity[0] == 0) {
@@ -43,6 +66,14 @@
     {
         getInfo: function () {
             return 'Smile object';
+        },
+
+        inCollision : function(a, b) {
+            return (!(((a.y + a.height) < (b.y)) ||
+                    (a.y > (b.y + b.height)) ||
+                    ((a.x + a.width) < b.x) ||
+                    (a.x > (b.x + b.width))
+                ));
         }
     }
 );

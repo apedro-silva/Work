@@ -11,12 +11,14 @@
             var paddleL = new Robotics.Paddle(c, [0, 0, 10, 50], "Black", 300, "L");
             var paddleR = new  Robotics.Paddle(c, [c.canvas.width-10, 0, 10, 50], "Black", 300, "R");
 
-            var objects = [paddleR, paddleL];
-            var smile = new Robotics.Smile(c, document.getElementById("smile"), x, y, [3, 3], objects);
-            var circle = new Robotics.Circle(c, "red", 20, x, y, [5, 5], objects);
+            var smile = new Robotics.Smile(c, document.getElementById("smile"), x, y, [3, 3]);
+            var circle = new Robotics.Circle(c, "red", 20, x, y, [5, 5]);
 
-            setInterval(function () { draw(); smile.step(); }, 30);
-            setInterval(function () { draw(); circle.step(); }, 30);
+            var objects = [paddleR, paddleL, circle];
+            setInterval(function () { draw(); smile.step(objects); }, 30);
+
+            var objects = [paddleR, paddleL];
+            setInterval(function () { draw(); circle.step(objects); }, 30);
 
             document.addEventListener("keydown", doKeyDown, true);
             document.addEventListener("keyup", doKeyUp, true);

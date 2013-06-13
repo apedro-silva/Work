@@ -16,10 +16,10 @@
         },
 
         left: function (value) {
-            this.velocity[0] = -5 * value
+            this.velocity[0] = -3 * value
         },
         right: function (value) {
-            this.velocity[0] = +5 * value
+            this.velocity[0] = +3 * value
         },
 
         getPosition: function () {
