@@ -1,6 +1,6 @@
 ﻿var Ship = WinJS.Class.define(
     function (ctx, image, radius, x, y, velocity) {
-        this.shipImage = image;
+        this.image = image;
         this.radius = radius;
         this.velocity = velocity;
         this.x = x;
@@ -17,10 +17,28 @@
         getInfo : function () {
             return 'color:' + this.color + ' radius:' + this.radius;
         },
+        getRadius: function () {
+            if (this.image.width > 0)
+                return this.image.width / 4;
+            return 0;
+        },
+        getCenter: function () {
+            if (this.image.width > 0)
+                return [this.x + this.image.width / 4, this.y + this.image.height / 2];
+            return 0;
+        },
         draw: function () {
-            Ship.drawImage(this.ctx, this.shipImage, this.x, this.y, this.angle, this.thrust);
+            Ship.drawImage(this.ctx, this.image, this.x, this.y, this.angle, this.thrust);
             if (this.missile!=null)
                 this.missile.draw();
+        },
+        collide: function (otherObject) {
+            var otherObjCenter = otherObject.getCenter();
+            var distance = Missile.getDistance(this.getCenter(), otherObjCenter);
+            if (distance <= this.getRadius() + otherObject.getRadius())
+                return true;
+            return false;
+
         },
         step: function () {
             // keep ship in domain
@@ -29,9 +47,9 @@
             var x = Math.round(this.x);
             var y = Math.round(this.y);
 
-            if (x < 0-this.shipImage.width/2)
+            if (x < 0-this.image.width/2)
                 this.x = 800;
-            if (y < 0-this.shipImage.height / 2)
+            if (y < 0-this.image.height / 2)
                 this.y = 600;
 
             // get forward vector
@@ -56,7 +74,7 @@
             this.angle_vel = vel;
         },
         getCanonTipPos: function (fv) {
-            return [this.x + this.imageCenter[0] + (this.imageSize[0] / 2 * fv[0]), (this.y + this.imageCenter[1]) + (this.imageSize[1] / 2 * fv[1])];
+            return [this.x + this.imageCenter[0] -10 + (this.imageSize[0] / 2 * fv[0]), (this.y + this.imageCenter[1]-3) + ((this.imageSize[1]-3) / 2 * fv[1])];
         },
         getMissileVelocity: function (fv) {
             return [this.velocity[0] + 6 * fv[0], this.velocity[1] + 6 * fv[1]];

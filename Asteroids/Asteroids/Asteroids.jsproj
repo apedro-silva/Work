@@ -54,6 +54,7 @@
       <SubType>Designer</SubType>
     </AppxManifest>
     <Content Include="default.html" />
+    <Content Include="images\asteroid_blend.png" />
     <Content Include="images\double_ship.png" />
     <Content Include="images\ship_no_thrust.png" />
     <Content Include="images\helix-nebula-1920.jpg" />
@@ -63,6 +64,7 @@
     <Content Include="images\smalllogo.png" />
     <Content Include="images\splashscreen.png" />
     <Content Include="images\storelogo.png" />
+    <Content Include="js\sprite.js" />
     <Content Include="js\missile.js" />
     <Content Include="js\ship.js" />
     <Content Include="js\default.js" />

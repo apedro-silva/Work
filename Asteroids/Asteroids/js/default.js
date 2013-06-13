@@ -8,6 +8,7 @@
     var backImage = new Image();
     var shipImage = new Image();
     var ship = null;
+    var rocks = [];
 
     app.onactivated = function (args) {
         if (args.detail.kind === activation.ActivationKind.launch) {
@@ -32,17 +33,46 @@
                     var y = shipImage.height;
 
                     ship = new Asteroids.Ship(ctx, shipImage, 10, 100, 100, [0, 0]);
-                    setInterval(function () { draw(ctx); ship.step(); }, 30);
+
+                    setInterval(function () { draw(ctx); doStep(); }, 30);
+                    setInterval(function () { createRock(ctx); }, 30);
                     document.addEventListener("keydown", doKeyDown, true);
                     document.addEventListener("keyup", doKeyUp, true);
                 };
             };
 
         }
+        function doStep() {
+            ship.step();
+            for (var i = 0; i < rocks.length; i++) {
+                rocks[i].step();
+            }
+            groupCollision(ship, rocks);
+        }
+        function groupCollision(self, group) {
+            var x = group.slice(0, group.length);
+
+            for (var i = 0; i < x.length; i++) {
+                if (self.collide(x[i])) {
+                    group.splice(i,1);
+                }
+            }
+        }
+        function createRock(ctx) {
+            var position = [Math.floor((Math.random() * 800) + 1), Math.floor((Math.random() * 600) + 1)];
+            var angle_vel = Math.random() * .2 - .1;
+            var velocity = [Math.floor(Math.random() * .6 - .3), Math.floor(Math.random() * .6 - .3)];
+
+            if (rocks.length<=5)
+                rocks.push(new Asteroids.Sprite(ctx, position, velocity, angle_vel));
+        }
         function draw(ctx) {
             ctx.clearRect(0, 0, canvas.width, canvas.height);    // Clear the last image, if it exists.
             ctx.drawImage(backImage, 1, 1, canvas.width, canvas.height);
 
+            for (var i = 0; i < rocks.length; i++) {
+                rocks[i].draw();
+            }
             ship.draw();
         }
         function doKeyDown(e) {
