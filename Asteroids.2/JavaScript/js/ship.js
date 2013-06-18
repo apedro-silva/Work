@@ -1,4 +1,6 @@
-﻿var Ship = WinJS.Class.define(
+﻿//// Copyright (c) António Pedro Silva. All rights reserved
+
+var Ship = WinJS.Class.define(
     function (ctx, image, radius, x, y, velocity) {
         this.image = image;
         this.radius = radius;
@@ -9,7 +11,6 @@
         this.angle_vel = 0;
         this.ctx = ctx;
         this.thrust = false;
-        this.missile = null;
         this.imageSize = [image.width / 2, image.height];
         this.imageCenter = [image.width / 4, image.height/2];
     },
@@ -46,15 +47,15 @@
         },
         step: function () {
             // keep ship in domain
-            this.x = ((this.x + this.velocity[0]) % canvas.width);
-            this.y = ((this.y + this.velocity[1]) % canvas.height);
+            this.x = ((this.x + this.velocity[0]) % this.ctx.canvas.width);
+            this.y = ((this.y + this.velocity[1]) % this.ctx.canvas.height);
             var x = Math.round(this.x);
             var y = Math.round(this.y);
 
             if (x < 0-this.image.width/2)
-                this.x = 800;
+                this.x = this.ctx.canvas.width;
             if (y < 0-this.image.height / 2)
-                this.y = 600;
+                this.y = this.ctx.canvas.height;
 
             // get forward vector
             this.angle += this.angle_vel;
@@ -81,7 +82,10 @@
         getMissileVelocity: function (fv) {
             return [this.velocity[0] + 6 * fv[0], this.velocity[1] + 6 * fv[1]];
         },
-        shoot: function () {
+        shoot: function (missiles) {
+            if (missiles == 0)
+                return null;
+
             var fv = Ship.getAngleVector(this.angle)
             var missilePosition = this.getCanonTipPos(fv);
             var missileVelocity = this.getMissileVelocity(fv);

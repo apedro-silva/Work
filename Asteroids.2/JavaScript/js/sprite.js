@@ -1,4 +1,6 @@
-﻿var Sprite = WinJS.Class.define(
+﻿//// Copyright (c) António Pedro Silva. All rights reserved
+
+var Sprite = WinJS.Class.define(
     function (ctx, position, velocity, angle_vel) {
         this.image = new Image();
         this.velocity = velocity;
@@ -36,15 +38,15 @@
         step: function () {
             // keep sprite in domain
             //return;
-            var x = ((this.position[0] + this.velocity[0]) % canvas.width);
-            var y = ((this.position[1] + this.velocity[1]) % canvas.height);
+            var x = ((this.position[0] + this.velocity[0]) % this.ctx.canvas.width);
+            var y = ((this.position[1] + this.velocity[1]) % this.ctx.canvas.height);
             x = Math.round(x);
             y = Math.round(y);
 
             if (x < 0 - this.image.width / 2)
-                x = canvas.width;
+                x = this.ctx.canvas.width;
             if (y < 0 - this.image.height / 2)
-                y = canvas.height;
+                y = this.ctx.canvas.height;
 
             this.position[0] = x;
             this.position[1] = y;

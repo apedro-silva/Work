@@ -1,6 +1,5 @@
 ﻿.pagecontrol section[role=main] {
-    margin-left: 120px;
-    margin-right: 120px;
+    margin-left: 100px;
 }
 
 @media screen and (-ms-view-state: snapped) {
@@ -16,3 +15,49 @@
         margin-right: 100px;
     }
 }
+
+.pagecontrol #grid {
+    display: -ms-flexbox;
+    -ms-flex-align: center;
+    -ms-flex-pack: start;
+    -ms-flex-direction: row;
+    width: 100%;
+    color: #fff;
+}
+
+.pagecontrol #grid > div {
+        -ms-flex: 0 0 auto;
+        text-align: center;
+        font-size: 36px;
+        width: 300px;
+        height: 200px;
+        padding: 15px;
+        
+}
+.pagecontrol #grid > div > div {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    min-width: 295px;
+    min-height: 612px;
+    background-color: #121111;
+    border: solid 2px blue;
+    transition: all 0.25s;
+}
+.pagecontrol #grid > div > div:hover {
+    box-shadow: 0 0 5px 5px #00f;
+    background-color: #121212;
+}
+
+.pagecontrol #output {
+    position: absolute;
+    top: 90%;
+    color: #f8dd3b;
+    font-weight: bold;
+    font-size: 24px;
+    text-shadow: 0 0 5px 5px #040;
+}
+
+.pagecontrol #output.error {
+    text-shadow: 0 0 5px 5px #f00;
+} 

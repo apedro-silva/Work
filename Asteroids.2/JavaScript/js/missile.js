@@ -1,4 +1,6 @@
-﻿var Missile = WinJS.Class.define(
+﻿//// Copyright (c) António Pedro Silva. All rights reserved
+
+var Missile = WinJS.Class.define(
     function (ctx, x, y, velocity) {
         this.image = new Image();
         this.velocity = velocity;
@@ -9,6 +11,7 @@
         this.ctx = ctx;
         this.age = 60;
         this.image.src = "/images/shot2.png";
+        GameManager.assetManager.playSound(GameManager.assetManager.assets.missileSound);
     },
     {
         getInfo : function () {
@@ -41,15 +44,15 @@
 
             this.age -= 1;
 
-            this.x = ((this.x + this.velocity[0]) % 800);
-            this.y = ((this.y + this.velocity[1]) % 600);
+            this.x = ((this.x + this.velocity[0]) % this.ctx.canvas.width);
+            this.y = ((this.y + this.velocity[1]) % this.ctx.canvas.height);
             var x = Math.round(this.x);
             var y = Math.round(this.y);
 
             if (x < 0)
-                this.x = 800;
+                this.x = this.ctx.canvas.width;
             if (y < 0)
-                this.y = 600;
+                this.y = this.ctx.canvas.height;
         },
 },
     {
