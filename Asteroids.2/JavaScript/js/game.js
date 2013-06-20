@@ -344,7 +344,18 @@ var Game = WinJS.Class.define(
     draw: function () {
         this.gameContext.clearRect(0, 0, gameCanvas.width, gameCanvas.height);
 
-        this.gameContext.drawImage(GameManager.assetManager.assets.backgroundImage.object, 0, 0, this.gameContext.canvas.width, this.gameContext.canvas.height);
+        var imageW = GameManager.assetManager.assets.backgroundImage.object.width;
+        var imageH = GameManager.assetManager.assets.backgroundImage.object.height;
+        var canvasW = this.gameContext.canvas.width;
+        var canvasH = this.gameContext.canvas.height;
+
+        //context.drawImage(img,x,y,width,height);
+        //Position the image on the canvas, and specify width and height of the image:
+        this.gameContext.drawImage(GameManager.assetManager.assets.backgroundImage.object,
+            0, 0,
+            imageW, imageH,
+            0, 0,
+            canvasW, canvasH);
 
         // TODO: Sample game rendering to be replaced
         this.ship.draw();

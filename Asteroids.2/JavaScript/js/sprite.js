@@ -9,22 +9,21 @@ var Sprite = WinJS.Class.define(
         this.angle_vel = angle_vel;
         this.ctx = ctx;
         this.image.src = "/images/asteroid_blend.png";
+        this.sizeFactor = 1;
     },
     {
         getInfo : function () {
             return 'Missile:' + this.velocity + '# Position:' + this.position;
         },
         getRadius: function () {
-            return this.image.width / 4;
+            return this.image.width * this.sizeFactor / 2;
         },
         getCenter: function () {
-            return [this.position[0] + this.image.width / 4, this.position[1] + this.image.height / 4];
+            return [this.position[0] + this.image.width * this.sizeFactor / 2, this.position[1] + this.image.height * this.sizeFactor / 2];
         },
         draw: function () {
             if (this.image.width > 0) {
-                Sprite.drawImage(this.ctx, this.image, this.position, this.angle);
-
-                //this.ctx.drawImage(this.image, 0, 0, this.image.width, this.image.height, this.position[0], this.position[1], this.image.width, this.image.height);
+                Sprite.drawImage(this.ctx, this.image, this.position, this.angle, this.sizeFactor);
             }
         },
         collide: function (otherObject) {
@@ -62,14 +61,17 @@ var Sprite = WinJS.Class.define(
         getDistance: function (p, q) {
             return Math.sqrt(Math.pow(p[0] - q[0], 2) + Math.pow(p[1] - q[1], 2));
         },
-        drawImage: function (ctx, image, position, angle) {
+        drawImage: function (ctx, image, position, angle, sizeFactor) {
+            var imageW = image.width * sizeFactor;
+            var imageH = image.height * sizeFactor;
             // save the current co-ordinate system 
             // before we screw with it
             ctx.save();
 
             // move to the middle of where we want to draw our image
             ctx.translate(position[0], position[1]);
-            ctx.translate(image.width / 4, image.height / 4);
+            // move to the middle of the image
+            ctx.translate((imageW / 2), (imageH / 2));
 
             // rotate around that point, converting our 
             // angle from degrees to radians 
@@ -77,7 +79,8 @@ var Sprite = WinJS.Class.define(
 
             // draw it up and to the left by half the width
             // and height of the image 
-            ctx.drawImage(image, 0, 0, image.width, image.height, -image.width / 4, -image.height/4, image.width/2, image.height/2);
+            ctx.drawImage(image, 0, 0, image.width, image.height, (-imageW / 2), (-imageH / 2),
+                imageW, imageH);
 
 
             // and restore the co-ords to how they were when we began
