@@ -39,6 +39,8 @@
     <Content Include="html\scoresPage.html" />
     <Content Include="html\settingsFlyout.html" />
     <Content Include="images\asteroid_blend.png" />
+    <Content Include="images\asteroid_blue.png" />
+    <Content Include="images\asteroid_brown.png" />
     <Content Include="images\double_ship.png" />
     <Content Include="images\explosion_alpha.png" />
     <Content Include="images\explosion_blue.png" />

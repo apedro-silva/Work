@@ -12,6 +12,8 @@ var Game = WinJS.Class.define(
     stateHelper: null,
     state: null,
     settings: null,
+    velocity: 0,
+    rocksImage: [],
     isSnapped: function () {
         var currentState = Windows.UI.ViewManagement.ApplicationView.value;
         return currentState === Windows.UI.ViewManagement.ApplicationViewState.snapped;
@@ -24,6 +26,11 @@ var Game = WinJS.Class.define(
             this.state = state.internal;
             this.settings = state.external;
         }
+        this.rocksImage.push(GameManager.assetManager.assets.rockImage.object);
+        this.rocksImage.push(GameManager.assetManager.assets.rock1Image.object);
+        this.rocksImage.push(GameManager.assetManager.assets.rock2Image.object);
+
+
     },
 
     // Called to get list of assets to pre-load
@@ -35,12 +42,16 @@ var Game = WinJS.Class.define(
             backgroundImage: { object: null, fileName: "/images/helix-nebula-1920.jpg", fileType: AssetType.image },
             explosion1Image: { object: null, fileName: "/images/explosion_alpha.png", fileType: AssetType.image },
             explosion2Image: { object: null, fileName: "/images/explosion_blue.png", fileType: AssetType.image },
-            explosion3Image: { object: null, fileName: "/images/explosion_blue.png", fileType: AssetType.image },
+            explosion3Image: { object: null, fileName: "/images/explosion_blue2.png", fileType: AssetType.image },
+            rockImage: { object: null, fileName: "/images/asteroid_blend.png", fileType: AssetType.image },
+            rock1Image: { object: null, fileName: "/images/asteroid_brown.png", fileType: AssetType.image },
+            rock2Image: { object: null, fileName: "/images/asteroid_blue.png", fileType: AssetType.image },
             shipImage: { object: null, fileName: "/images/double_ship.png", fileType: AssetType.image },
             missileSound: { object: null, fileName: "/sounds/missile.mp3", fileType: AssetType.audio, loop: false },
             explosionSound: { object: null, fileName: "/sounds/explosion.mp3", fileType: AssetType.audio, loop: false },
             thrustSound: { object: null, fileName: "/sounds/thrust.mp3", fileType: AssetType.audio, loop: false }
         };
+
         return assets;
     },
     
@@ -134,6 +145,7 @@ var Game = WinJS.Class.define(
         this.state.score = 0;
         this.state.lives = 3;
         this.state.missiles = 20;
+
     },
 
     // Called when the game is started
@@ -278,10 +290,10 @@ var Game = WinJS.Class.define(
         var angle_vel = Math.random() * .2 - .1;
         var velocity = [Math.floor(Math.random() * .6 - .3), Math.floor(Math.random() * .6 - .3)];
 
-        var rock = new Asteroids.Sprite(this.gameContext, position, velocity, angle_vel)
+        var rockImage = this.rocksImage[Math.floor(Math.random() * 3)];
+        var rock = new Asteroids.Sprite(this.gameContext, rockImage, [90, 90], position, velocity, angle_vel, false, null)
 
-        //if (!objectCollision(ship, rock) && rocks.length <= 5)
-        if (this.rocks.length <= 5)
+        if (!this.objectCollision(this.ship, rock) && this.rocks.length <= 5)
             this.rocks.push(rock);
     },
 
@@ -307,11 +319,12 @@ var Game = WinJS.Class.define(
                     tmpMissiles[i].step();
             }
 
-
-            var collisions = this.groupCollision(this.ship, this.rocks, 1);
+            // process ship collision with rocks
+            var collisions = this.groupCollision(this.ship, this.rocks, 2);
             this.state.lives -= collisions;
 
-            collisions = this.groupGroupCollision(this.missiles, this.rocks, 2);
+            // process missiles hiting rocks
+            collisions = this.groupGroupCollision(this.missiles, this.rocks, 1);
             this.state.score += collisions;
 
             if (this.state.score != this.state.previousScore & this.state.score % 10 == 0) {
@@ -321,10 +334,11 @@ var Game = WinJS.Class.define(
 
             this.state.previousScore = this.state.score;
 
+            // process rocks collisions
             this.groupGroupCollision(this.rocks, this.rocks, 3);
 
+            // process explosions
             var tempExplosions = this.explosions.slice(0, this.explosions.length);
-
             for (var i = 0; i < tempExplosions.length; i++) {
                 if (tempExplosions[i].getAge() >= 24)
                     this.explosions.splice(i, 1);
@@ -342,22 +356,9 @@ var Game = WinJS.Class.define(
 
     // Main game render loop
     draw: function () {
-        this.gameContext.clearRect(0, 0, gameCanvas.width, gameCanvas.height);
+        this.drawBackground();
 
-        var imageW = GameManager.assetManager.assets.backgroundImage.object.width;
-        var imageH = GameManager.assetManager.assets.backgroundImage.object.height;
-        var canvasW = this.gameContext.canvas.width;
-        var canvasH = this.gameContext.canvas.height;
-
-        //context.drawImage(img,x,y,width,height);
-        //Position the image on the canvas, and specify width and height of the image:
-        this.gameContext.drawImage(GameManager.assetManager.assets.backgroundImage.object,
-            0, 0,
-            imageW, imageH,
-            0, 0,
-            canvasW, canvasH);
-
-        // TODO: Sample game rendering to be replaced
+        //draw ship
         this.ship.draw();
 
         // draw missiles
@@ -405,6 +406,33 @@ var Game = WinJS.Class.define(
         this.gameContext.fillText("Missiles:" + this.state.missiles, 5, 100);
 
     },
+    drawBackground: function () {
+        this.gameContext.clearRect(0, 0, gameCanvas.width, gameCanvas.height);
+        var backImage = GameManager.assetManager.assets.backgroundImage.object;
+        var imageW = backImage.width;
+        var imageH = backImage.height;
+        var canvasW = this.gameContext.canvas.width;
+        var canvasH = this.gameContext.canvas.height;
+
+        //context.drawImage(img,x,y,width,height);
+        //Position the image on the canvas, and specify width and height of the image:
+
+        this.gameContext.drawImage(backImage, 0, 0, imageW, imageH, this.velocity, 0, canvasW, canvasH);
+
+        //this.gameContext.drawImage(backImage, this.velocity, 0, canvasW, canvasH);
+
+
+        //this.gameContext.drawImage(backImage,imageW - Math.abs(this.velocity), 0, canvasW, canvasH);
+        //if (Math.abs(this.velocity) > imageW)
+        //    this.velocity = 0;
+
+        //this.gameContext.drawImage(GameManager.assetManager.assets.backgroundImage.object,
+        //    0, 0,
+        //    imageW, imageH,
+        //    this.velocity, 0,
+        //    canvasW, canvasH);
+        //this.velocity -= 2;
+    },
     groupCollision: function (self, group, explosionType) {
         var x = group.slice(0, group.length);
         var collisions = 0;
@@ -413,8 +441,10 @@ var Game = WinJS.Class.define(
             if (self == x[i])
                 continue;
             if (this.objectCollision(self, x[i])) {
-                var explosionImage = this.getExplosionImage(explosionType);
-                this.explosions.push(new Asteroids.Explosion(this.gameContext, explosionImage, self.getCenter()));
+                 var explosionImage = this.getExplosionImage(explosionType);
+                 var explosion = new Asteroids.Sprite(this.gameContext, explosionImage, [128, 128], x[i].getCenter(), [0, 0], 0, true, GameManager.assetManager.assets.explosionSound)
+                this.explosions.push(explosion);
+                //this.explosions.push(new Asteroids.Explosion(this.gameContext, explosionImage, x[i].getCenter()));
                 group.splice(i, 1);
                 collisions += 1;
             }
@@ -430,11 +460,11 @@ var Game = WinJS.Class.define(
             return GameManager.assetManager.assets.explosion3Image.object;
     },
 
-    groupGroupCollision: function (group1, group2, dualExplosion) {
+    groupGroupCollision: function (group1, group2, explosionType) {
         var tmpGroup1 = group1.slice(0, group1.length);
         var collisions = 0;
         for (var i = 0; i < tmpGroup1.length; i++) {
-            collisions = this.groupCollision(tmpGroup1[i], group2, dualExplosion);
+            collisions = this.groupCollision(tmpGroup1[i], group2, explosionType);
             if (collisions > 0) {
                 group1.splice(i, 1);
             }
