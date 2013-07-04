@@ -1,0 +1,38 @@
+﻿.gridview
+{
+    border-style: solid;
+}
+
+.gvrow {   
+    background-color: #EFF3FB; 
+    color:#333333;  
+}  
+.gvfooter {   
+    background-color: #507CD1;   
+    font-weight:bold;
+    border-style:solid;
+}  
+.gvpager {   
+    background-color: #2461BF;   
+    color:#333333;  
+}  
+.gvselectRow {   
+    background-color: #D1DDF1;  
+    color:Navy; 
+    font-weight:bold;
+}  
+
+.gvheader    
+{
+    background-color: #adadad /*507CD1*/;   
+    color:White;
+    font-weight:bold;
+}  
+
+.gvdetail {   
+    background-color: #EFF3FB;   
+}  
+
+.gvcommandField {
+    color:#333333;  
+}

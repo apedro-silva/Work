@@ -1,0 +1,801 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="btnBack" xml:space="preserve">
+    <value>Voltar</value>
+  </data>
+  <data name="btnCancel" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="btnConfirm" xml:space="preserve">
+    <value>Confirmar</value>
+  </data>
+  <data name="btnOK" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="lDetail" xml:space="preserve">
+    <value>Detalhe</value>
+  </data>
+  <data name="lHome" xml:space="preserve">
+    <value>Início</value>
+  </data>
+  <data name="lInformation" xml:space="preserve">
+    <value>Informação</value>
+  </data>
+  <data name="lLangEN" xml:space="preserve">
+    <value>Inglês</value>
+  </data>
+  <data name="lLangPT" xml:space="preserve">
+    <value>Português</value>
+  </data>
+  <data name="lLanguageMenu" xml:space="preserve">
+    <value>Idioma</value>
+  </data>
+  <data name="lLoginMessage" xml:space="preserve">
+    <value>Por favor introduza o Utilizador e Código Secreto.</value>
+  </data>
+  <data name="lNoAccountMessage" xml:space="preserve">
+    <value>se não está registado.</value>
+  </data>
+  <data name="lOptions" xml:space="preserve">
+    <value>Opções</value>
+  </data>
+  <data name="lPassword" xml:space="preserve">
+    <value>PALAVRA PASSE</value>
+  </data>
+  <data name="lRegister" xml:space="preserve">
+    <value>Registe-se</value>
+  </data>
+  <data name="lSearch" xml:space="preserve">
+    <value>Pesquisa</value>
+  </data>
+  <data name="lSearchResults" xml:space="preserve">
+    <value>Resultados pesquisa</value>
+  </data>
+  <data name="lSelect" xml:space="preserve">
+    <value>Seleccionar</value>
+  </data>
+  <data name="lUsername" xml:space="preserve">
+    <value>Utilizador</value>
+  </data>
+  <data name="mAbout" xml:space="preserve">
+    <value>Informação</value>
+  </data>
+  <data name="mApplicationTitle" xml:space="preserve">
+    <value>Ministério da Economia :: Sistema de Monitorização de Indicadores da ZEE</value>
+  </data>
+  <data name="mHome" xml:space="preserve">
+    <value>Início</value>
+  </data>
+  <data name="mForms" xml:space="preserve">
+    <value>Formulários</value>
+  </data>
+  <data name="mWait" xml:space="preserve">
+    <value>Em processamento...</value>
+  </data>
+  <data name="mWelcome" xml:space="preserve">
+    <value>Benvindo</value>
+  </data>
+  <data name="oCreate" xml:space="preserve">
+    <value>Criar</value>
+  </data>
+  <data name="oDelete" xml:space="preserve">
+    <value>Eliminar</value>
+  </data>
+  <data name="oExecute" xml:space="preserve">
+    <value>Executar</value>
+  </data>
+  <data name="oImport" xml:space="preserve">
+    <value>Importar</value>
+  </data>
+  <data name="oQuery" xml:space="preserve">
+    <value>Consultar</value>
+  </data>
+  <data name="oUpdate" xml:space="preserve">
+    <value>Alterar</value>
+  </data>
+  <data name="oExport" xml:space="preserve">
+    <value>Exportar</value>
+  </data>
+  <data name="lAssetType" xml:space="preserve">
+    <value>Tipo de Bem</value>
+  </data>
+  <data name="oAll" xml:space="preserve">
+    <value>[Seleccione]</value>
+  </data>
+  <data name="lAssetFileName" xml:space="preserve">
+    <value>Nome Ficha</value>
+  </data>
+  <data name="lAssetId" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="btnExport" xml:space="preserve">
+    <value>Exportar</value>
+  </data>
+  <data name="btnUnSelectAll" xml:space="preserve">
+    <value>Inverter Selecção</value>
+  </data>
+  <data name="btnCreateUser" xml:space="preserve">
+    <value>Criar Utilizador</value>
+  </data>
+  <data name="lEmail" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="lPasswordConfirm" xml:space="preserve">
+    <value>Confirme Código Secreto:</value>
+  </data>
+  <data name="lPasswordFormat" xml:space="preserve">
+    <value>O Código Secreto deve ter um mínimo de </value>
+  </data>
+  <data name="lPasswordFormat1" xml:space="preserve">
+    <value>caracteres de comprimento.</value>
+  </data>
+  <data name="lUseFormBelow" xml:space="preserve">
+    <value>Use a informação abaixo para criar um novo utilizador</value>
+  </data>
+  <data name="mConfirmPasswordIsRequired" xml:space="preserve">
+    <value>Introduza Confirmação Código Secreto!</value>
+  </data>
+  <data name="mEmailIsRequired" xml:space="preserve">
+    <value>Introduza o Email!</value>
+  </data>
+  <data name="mPasswordIsRequired" xml:space="preserve">
+    <value>Introduza o Código Secreto!</value>
+  </data>
+  <data name="mUserNameIsRequired" xml:space="preserve">
+    <value>Introduza o Utilizador!</value>
+  </data>
+  <data name="lAbout" xml:space="preserve">
+    <value>Informação</value>
+  </data>
+  <data name="lAuthenticationMessage" xml:space="preserve">
+    <value>LOGIN</value>
+  </data>
+  <data name="lRememberAuthentication" xml:space="preserve">
+    <value>Relembrar autênticação</value>
+  </data>
+  <data name="bLoginConfirm" xml:space="preserve">
+    <value>ENTRAR</value>
+  </data>
+  <data name="bRegister" xml:space="preserve">
+    <value>Confirmar</value>
+  </data>
+  <data name="lPasswordCriteria" xml:space="preserve">
+    <value>O Código Secreto deve ter um mínimo de </value>
+  </data>
+  <data name="lPasswordCriteriaEnd" xml:space="preserve">
+    <value>caracteres de comprimento.</value>
+  </data>
+  <data name="lPasswordRequired" xml:space="preserve">
+    <value>O código secreto é obrigatório.</value>
+  </data>
+  <data name="lRegisterOption" xml:space="preserve">
+    <value>Registo</value>
+  </data>
+  <data name="lUserNameRequired" xml:space="preserve">
+    <value>O código de utilizador é obrigatório.</value>
+  </data>
+  <data name="mPasswordsDoNotMatch" xml:space="preserve">
+    <value>A Código Secreto e Confirmação não condizem</value>
+  </data>
+  <data name="lContacts" xml:space="preserve">
+    <value>Contactos</value>
+  </data>
+  <data name="lControlPanel" xml:space="preserve">
+    <value>Painel de Controlo</value>
+  </data>
+  <data name="lDashboardWellcome" xml:space="preserve">
+    <value>Bem-Vindo aos Formulários ZEE</value>
+  </data>
+  <data name="lBackOffice" xml:space="preserve">
+    <value>BackOffice</value>
+  </data>
+  <data name="lDescription" xml:space="preserve">
+    <value>Descrição</value>
+  </data>
+  <data name="lID" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="mCreateOK" xml:space="preserve">
+    <value>Registo criado com sucesso!</value>
+  </data>
+  <data name="lAccountInformation" xml:space="preserve">
+    <value>Informação da Conta</value>
+  </data>
+  <data name="mDeleteOK" xml:space="preserve">
+    <value>Registo eliminado com sucesso!</value>
+  </data>
+  <data name="mUpdateOK" xml:space="preserve">
+    <value>Formulário &lt;b&gt;gravado&lt;/b&gt; com sucesso!</value>
+  </data>
+  <data name="m_wait" xml:space="preserve">
+    <value>Em processamento...</value>
+  </data>
+  <data name="lForms" xml:space="preserve">
+    <value>Formulários</value>
+  </data>
+  <data name="lSmallDescription" xml:space="preserve">
+    <value>Desc.Abreviada</value>
+  </data>
+  <data name="lISOCode" xml:space="preserve">
+    <value>Código ISO</value>
+  </data>
+  <data name="lArea" xml:space="preserve">
+    <value>Quadrante</value>
+  </data>
+  <data name="lCompany" xml:space="preserve">
+    <value>Empresa</value>
+  </data>
+  <data name="lSector" xml:space="preserve">
+    <value>Sector</value>
+  </data>
+  <data name="lSelectOne" xml:space="preserve">
+    <value>[Seleccione]</value>
+  </data>
+  <data name="mMandatoryCountry" xml:space="preserve">
+    <value>Indique o País</value>
+  </data>
+  <data name="mMandatoryExportAmount" xml:space="preserve">
+    <value>Indique o montante</value>
+  </data>
+  <data name="mNoRecordsFound" xml:space="preserve">
+    <value>Não foram encontrados registos</value>
+  </data>
+  <data name="mSelectCountry2Remove" xml:space="preserve">
+    <value>Seleccione o registo que pretende eliminar</value>
+  </data>
+  <data name="bAddCountry" xml:space="preserve">
+    <value>Adicionar</value>
+  </data>
+  <data name="lAmount" xml:space="preserve">
+    <value>Montante</value>
+  </data>
+  <data name="lCountry" xml:space="preserve">
+    <value>País</value>
+  </data>
+  <data name="lDelete" xml:space="preserve">
+    <value>Eliminar</value>
+  </data>
+  <data name="lExportAmount" xml:space="preserve">
+    <value>Montante Exportação(Kz)</value>
+  </data>
+  <data name="lProductionUnit" xml:space="preserve">
+    <value>Unidade Produtiva</value>
+  </data>
+  <data name="lFirstName" xml:space="preserve">
+    <value>Nome</value>
+  </data>
+  <data name="lLastActivityDate" xml:space="preserve">
+    <value>Data Última Actividade</value>
+  </data>
+  <data name="lLastLockoutDate" xml:space="preserve">
+    <value>Data Último Bloqueio</value>
+  </data>
+  <data name="lLastLoginDate" xml:space="preserve">
+    <value>Data Último Login</value>
+  </data>
+  <data name="lLastName" xml:space="preserve">
+    <value>Apelido</value>
+  </data>
+  <data name="lMembershipRole" xml:space="preserve">
+    <value>Perfil</value>
+  </data>
+  <data name="lForm2Message" xml:space="preserve">
+    <value>Indique para {0} {1} de {2}</value>
+  </data>
+  <data name="lSalarios" xml:space="preserve">
+    <value>Salários</value>
+  </data>
+  <data name="lValorCustosComFormacao" xml:space="preserve">
+    <value>Valor dos custos com formação</value>
+  </data>
+  <data name="lValorCustosComMaoObraDirecta" xml:space="preserve">
+    <value>Valor dos custos com mão-de-obra directa</value>
+  </data>
+  <data name="lValorCustosOperacionais" xml:space="preserve">
+    <value>Valor dos Custos Operacionais</value>
+  </data>
+  <data name="lValorQuantiaLiquidaPrestacaoServicos" xml:space="preserve">
+    <value>Valor da quantia líquida da Prestação de Serviços</value>
+  </data>
+  <data name="lValorQuantiaLiquidaVendas" xml:space="preserve">
+    <value>Valor da quantia líquida das vendas</value>
+  </data>
+  <data name="lValorTotalCustos" xml:space="preserve">
+    <value>Valor Total dos Custos</value>
+  </data>
+  <data name="lValorTotalEncargosSociais" xml:space="preserve">
+    <value>Valor total encargos sociais</value>
+  </data>
+  <data name="lValorTotlaOutrosCustosComPessoal" xml:space="preserve">
+    <value>Valor total de outros custos com pessoal</value>
+  </data>
+  <data name="lValorVolumeNegocios" xml:space="preserve">
+    <value>Valor do volume de negócios</value>
+  </data>
+  <data name="lValorVolumeNegociosOrcamentado" xml:space="preserve">
+    <value>Valor do volume de negócios orçamentado</value>
+  </data>
+  <data name="lConcluded" xml:space="preserve">
+    <value>Concluído</value>
+  </data>
+  <data name="lInProgress" xml:space="preserve">
+    <value>Em Funcionamento</value>
+  </data>
+  <data name="lStarted" xml:space="preserve">
+    <value>Iniciado</value>
+  </data>
+  <data name="lConfirmPassword" xml:space="preserve">
+    <value>Confirme o Código Secreto</value>
+  </data>
+  <data name="lNumeroHectaresEspacoTotalZEE" xml:space="preserve">
+    <value>Nº Hectares Espaço Total da ZEE</value>
+  </data>
+  <data name="lNumeroHectaresEspacoUtilizado" xml:space="preserve">
+    <value>Nº Hectares do Espaço Utilizado</value>
+  </data>
+  <data name="lNumeroTotalUnidadesProdutivas" xml:space="preserve">
+    <value>Nº Total de Unidades Produtivas</value>
+  </data>
+  <data name="lDevelopmentPhaseConcluded" xml:space="preserve">
+    <value>Concluído</value>
+  </data>
+  <data name="lDevelopmentPhaseInProgess" xml:space="preserve">
+    <value>Em Desenvolvimento</value>
+  </data>
+  <data name="lDevelopmentPhaseStarted" xml:space="preserve">
+    <value>Iniciado</value>
+  </data>
+  <data name="lExternalActiveWorkers" xml:space="preserve">
+    <value>Nº total de trabalhadores activos estrangeiros</value>
+  </data>
+  <data name="lLocalActiveWorkers" xml:space="preserve">
+    <value>Nº total de trabalhadores activos Angolanos</value>
+  </data>
+  <data name="lNrColaboradoresAdmitidos" xml:space="preserve">
+    <value>Nº colaboradores admitidos</value>
+  </data>
+  <data name="lNrDiasAusenciaTrabalho" xml:space="preserve">
+    <value>Nº de dias de ausência ao trabalho</value>
+  </data>
+  <data name="lNrDiasUteisPeriodo" xml:space="preserve">
+    <value>Nº de dias úteis do período</value>
+  </data>
+  <data name="lNrSaidas" xml:space="preserve">
+    <value>Nº de saídas</value>
+  </data>
+  <data name="lNrTotalHorasFormacao" xml:space="preserve">
+    <value>Nº total de horas de formação</value>
+  </data>
+  <data name="lWorkerWithHighQualification" xml:space="preserve">
+    <value>com qualificação alta(licenciatura, mestrado)</value>
+  </data>
+  <data name="lWorkerWithLowQualification" xml:space="preserve">
+    <value>com qualificação baixa(primária)</value>
+  </data>
+  <data name="lWorkerWithMediumQualification" xml:space="preserve">
+    <value>com qualificação média(ensino básico, ensino secundário)</value>
+  </data>
+  <data name="mFinancialExportMandatory" xml:space="preserve">
+    <value>Introduza um dado financeiro!</value>
+  </data>
+  <data name="lPeriodicity" xml:space="preserve">
+    <value>Periodicidade</value>
+  </data>
+  <data name="mPeriodicityMandatory" xml:space="preserve">
+    <value>Indique a periodicidade do Formulário</value>
+  </data>
+  <data name="lCompanyLabel" xml:space="preserve">
+    <value>Empresa :</value>
+  </data>
+  <data name="lFillDateLabel" xml:space="preserve">
+    <value>Data Preenchimento :</value>
+  </data>
+  <data name="lProductionUnitLabel" xml:space="preserve">
+    <value>Unidade Produtiva :</value>
+  </data>
+  <data name="lUserLabel" xml:space="preserve">
+    <value>Utilizador :</value>
+  </data>
+  <data name="lManagement" xml:space="preserve">
+    <value>Gestão</value>
+  </data>
+  <data name="lSubmitDate" xml:space="preserve">
+    <value>Data Submissão</value>
+  </data>
+  <data name="lSubmitUserName" xml:space="preserve">
+    <value>Utilizador</value>
+  </data>
+  <data name="lFillForm" xml:space="preserve">
+    <value>Preencher</value>
+  </data>
+  <data name="btnSubmit" xml:space="preserve">
+    <value>Submeter</value>
+  </data>
+  <data name="btnUpdate" xml:space="preserve">
+    <value>Gravar</value>
+  </data>
+  <data name="lFormDescription" xml:space="preserve">
+    <value>Descrição</value>
+  </data>
+  <data name="lFormType" xml:space="preserve">
+    <value>Tipo Formulário</value>
+  </data>
+  <data name="lFormState" xml:space="preserve">
+    <value>Estado</value>
+  </data>
+  <data name="lFunctionalArea" xml:space="preserve">
+    <value>Área Funcional</value>
+  </data>
+  <data name="lApril" xml:space="preserve">
+    <value>Abril</value>
+  </data>
+  <data name="lAugust" xml:space="preserve">
+    <value>Agosto</value>
+  </data>
+  <data name="lDecember" xml:space="preserve">
+    <value>Dezembro</value>
+  </data>
+  <data name="lFebruary" xml:space="preserve">
+    <value>Fevereiro</value>
+  </data>
+  <data name="lJanuary" xml:space="preserve">
+    <value>Janeiro</value>
+  </data>
+  <data name="lJuly" xml:space="preserve">
+    <value>Julho</value>
+  </data>
+  <data name="lJune" xml:space="preserve">
+    <value>Junho</value>
+  </data>
+  <data name="lMarch" xml:space="preserve">
+    <value>Março</value>
+  </data>
+  <data name="lMay" xml:space="preserve">
+    <value>Maio</value>
+  </data>
+  <data name="lNovember" xml:space="preserve">
+    <value>Novembro</value>
+  </data>
+  <data name="lOctober" xml:space="preserve">
+    <value>Outubro</value>
+  </data>
+  <data name="lSeptember" xml:space="preserve">
+    <value>Setembro</value>
+  </data>
+  <data name="mSubmitedOK" xml:space="preserve">
+    <value>Formulário &lt;b&gt;submetido&lt;/b&gt; com sucesso!</value>
+  </data>
+  <data name="lExecutive" xml:space="preserve">
+    <value>Executivo</value>
+  </data>
+  <data name="lManager" xml:space="preserve">
+    <value>Gestor</value>
+  </data>
+  <data name="lAlarmRange" xml:space="preserve">
+    <value>Alerta de atraso para utilizador</value>
+  </data>
+  <data name="lLateSubmissionRange" xml:space="preserve">
+    <value>dias antes do final do prazo.</value>
+  </data>
+  <data name="lAlarmRangeExecutive" xml:space="preserve">
+    <value>Alerta de atraso para executivo</value>
+  </data>
+  <data name="lAlarmRangeManager" xml:space="preserve">
+    <value>Alerta de atraso para gestor</value>
+  </data>
+  <data name="LConfirmPasswordRequired" xml:space="preserve">
+    <value>Confirmação do Código Secreto é obrigatório!</value>
+  </data>
+  <data name="lCurrentPassword" xml:space="preserve">
+    <value>Código Secreto Actual</value>
+  </data>
+  <data name="lNewPassword" xml:space="preserve">
+    <value>Novo Código Secreto</value>
+  </data>
+  <data name="lPasswordChanged" xml:space="preserve">
+    <value>O seu Código Secreto foi alterado com sucesso!</value>
+  </data>
+  <data name="lDevelopmentPhase" xml:space="preserve">
+    <value>Fase de Desenvolvimento</value>
+  </data>
+  <data name="lProductionUnitsNumber" xml:space="preserve">
+    <value>Número de Unidades de Produção</value>
+  </data>
+  <data name="lSistemaControloAutomatizacaoProdução" xml:space="preserve">
+    <value>Sistema de controlo automatização da produção</value>
+  </data>
+  <data name="lValorInvestimento" xml:space="preserve">
+    <value>Valor do investimento</value>
+  </data>
+  <data name="lValorInvestimentoTecnologia" xml:space="preserve">
+    <value>Valor do investimento em tecnologia</value>
+  </data>
+  <data name="lValorLiqVendasProdutosOrcamentado" xml:space="preserve">
+    <value>Valor liquido das vendas de produtos orçamentado</value>
+  </data>
+  <data name="lValorLiqVendasServicosOrcamentado" xml:space="preserve">
+    <value>Valor liquido das vendas de serviços orçamentado</value>
+  </data>
+  <data name="lValorActivo" xml:space="preserve">
+    <value>Valor do Activo</value>
+  </data>
+  <data name="lValorActivoCirculante" xml:space="preserve">
+    <value>Valor do Activo Circulante</value>
+  </data>
+  <data name="lValorLiquidoPrestacaoServicosSDZEE" xml:space="preserve">
+    <value>Valor líquido da prestação de serviços da SDZEE</value>
+  </data>
+  <data name="lValorLiquidoVendasSDZEE" xml:space="preserve">
+    <value>Valor líquido das vendas da SDZEE</value>
+  </data>
+  <data name="lValorPassivo" xml:space="preserve">
+    <value>Valor do Passivo</value>
+  </data>
+  <data name="lValorPassivoCurtoPrazo" xml:space="preserve">
+    <value>Valor do Passivo a Curto Prazo</value>
+  </data>
+  <data name="lValorTotalCustosSDZEE" xml:space="preserve">
+    <value>Valor Total dos Custos da SDZEE</value>
+  </data>
+  <data name="lYear" xml:space="preserve">
+    <value>Ano</value>
+  </data>
+  <data name="lNumeroHectaresQuadrante1" xml:space="preserve">
+    <value>Nº Hectares do quadrante 1 da ZEE</value>
+  </data>
+  <data name="lNumeroHectaresQuadrante2" xml:space="preserve">
+    <value>Nº Hectares do quadrante 2 da ZEE</value>
+  </data>
+  <data name="lNumeroHectaresQuadrante3" xml:space="preserve">
+    <value>Nº Hectares do quadrante 3 da ZEE</value>
+  </data>
+  <data name="lNumeroHectaresQuadrante4" xml:space="preserve">
+    <value>Nº Hectares do quadrante 4 da ZEE</value>
+  </data>
+  <data name="lActiveEmployees" xml:space="preserve">
+    <value>Nº total de trabalhadores activos da SDZEE</value>
+  </data>
+  <data name="lEmployeesHired" xml:space="preserve">
+    <value>Nº total de trabalhadores admitidos na SDZEE</value>
+  </data>
+  <data name="lEmployeesLeft" xml:space="preserve">
+    <value>Nº total de trabalhadores que sairam da SDZEE</value>
+  </data>
+  <data name="lTotalTrainingHours" xml:space="preserve">
+    <value>Nº total de horas de formação da SDZEE</value>
+  </data>
+  <data name="btnResetPwd" xml:space="preserve">
+    <value>Reset Pwd</value>
+  </data>
+  <data name="lHectares" xml:space="preserve">
+    <value>Hectares</value>
+  </data>
+  <data name="lApproveForm" xml:space="preserve">
+    <value>Aprovar</value>
+  </data>
+  <data name="btnApproveForm" xml:space="preserve">
+    <value>Aprovar</value>
+  </data>
+  <data name="mApprovedOK" xml:space="preserve">
+    <value>Formulário &lt;b&gt;aprovado&lt;/b&gt; com sucesso!</value>
+  </data>
+  <data name="lApplicationPage" xml:space="preserve">
+    <value>Página</value>
+  </data>
+  <data name="lOperation" xml:space="preserve">
+    <value>Operação</value>
+  </data>
+  <data name="lResult" xml:space="preserve">
+    <value>Resultado</value>
+  </data>
+  <data name="lTimestamp" xml:space="preserve">
+    <value>Data/Hora</value>
+  </data>
+  <data name="lEndDate" xml:space="preserve">
+    <value>Data Final</value>
+  </data>
+  <data name="lStartDate" xml:space="preserve">
+    <value>Data Inicial</value>
+  </data>
+  <data name="lService" xml:space="preserve">
+    <value>Serviço</value>
+  </data>
+  <data name="bSubmit" xml:space="preserve">
+    <value>Submeter</value>
+  </data>
+  <data name="lGetPwdUserName" xml:space="preserve">
+    <value>Utilizador : </value>
+  </data>
+  <data name="mNewPwdSent" xml:space="preserve">
+    <value>O novo Código Secreto foi enviado para o email do Utilizador</value>
+  </data>
+  <data name="mUserNameInstructionText" xml:space="preserve">
+    <value>Introduza o Utilizador para receber o seu Código Secreto</value>
+  </data>
+  <data name="mUserNameTitleText" xml:space="preserve">
+    <value>Recuperar Password</value>
+  </data>
+  <data name="lCompanyName" xml:space="preserve">
+    <value>Designação</value>
+  </data>
+  <data name="lIsLockedOut" xml:space="preserve">
+    <value>Bloqueado</value>
+  </data>
+  <data name="mUserCreateOK" xml:space="preserve">
+    <value>Utilizador criado com sucesso!</value>
+  </data>
+  <data name="mUserDeleteOK" xml:space="preserve">
+    <value>Utilizador eliminado com sucesso!</value>
+  </data>
+  <data name="mUserUpdateOK" xml:space="preserve">
+    <value>Utilizador alterado com sucesso!</value>
+  </data>
+  <data name="lPeriodicityCode" xml:space="preserve">
+    <value>Código</value>
+  </data>
+  <data name="btnRejectForm" xml:space="preserve">
+    <value>Rejeitar</value>
+  </data>
+  <data name="mRejectedOK" xml:space="preserve">
+    <value>Formulário &lt;b&gt;rejeitado&lt;/b&gt; com sucesso!</value>
+  </data>
+  <data name="mMandatoryCompanyDescription" xml:space="preserve">
+    <value>Introduza descrição da empresa!</value>
+  </data>
+  <data name="mMandatoryCompanyName" xml:space="preserve">
+    <value>Introduza designação da Empresa!</value>
+  </data>
+  <data name="mMandatoryCountryIsoCode" xml:space="preserve">
+    <value>Introduza o Código ISO do País!</value>
+  </data>
+  <data name="mMandatoryCountryLabelName" xml:space="preserve">
+    <value>Introduza Código do País!</value>
+  </data>
+  <data name="mMandatoryCountryName" xml:space="preserve">
+    <value>Introduza nome do País!</value>
+  </data>
+  <data name="mRecordCreateOK" xml:space="preserve">
+    <value>Registo criado com sucesso!</value>
+  </data>
+  <data name="mRecordDeleteOK" xml:space="preserve">
+    <value>Registo eliminado com sucesso!</value>
+  </data>
+  <data name="mRecordUpdateOK" xml:space="preserve">
+    <value>Registo alterado com sucesso!</value>
+  </data>
+  <data name="mMandatoryDescription" xml:space="preserve">
+    <value>Introduza a descrição!</value>
+  </data>
+  <data name="mMandatorySmallDescription" xml:space="preserve">
+    <value>Introduza a descrição abreviada!</value>
+  </data>
+  <data name="mMandatoryArea" xml:space="preserve">
+    <value>Introduza a Área!</value>
+  </data>
+  <data name="mMandatoryCompany" xml:space="preserve">
+    <value>Introduza a Empresa!</value>
+  </data>
+  <data name="mMandatorySector" xml:space="preserve">
+    <value>Introduza o Sector!</value>
+  </data>
+  <data name="lLoginFailureText" xml:space="preserve">
+    <value>Tentativa de Login falhada. Por favor tente de novo.</value>
+  </data>
+</root>

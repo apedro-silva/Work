@@ -1,0 +1,1163 @@
+********** 20/03/2013 10:10:38 **********
+Exception Type: System.InvalidOperationException
+Exception: Extender control 'SliderExtender1' cannot extend 'slider1'. Extender controls of type 'AjaxControlToolkit.SliderExtender' cannot extend controls of type 'System.Web.UI.WebControls.Label'.
+Source: ASP.account_smi_02_13_aspx
+Stack Trace: 
+   at System.Web.UI.ScriptControlManager.VerifyTargetControlType[TExtenderControl](TExtenderControl extenderControl, Control targetControl)
+   at System.Web.UI.ScriptControlManager.RegisterExtenderControl[TExtenderControl](TExtenderControl extenderControl, Control targetControl)
+   at AjaxControlToolkit.ExtenderControlBase.OnPreRender(EventArgs e)
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+********** 21/03/2013 12:33:29 **********
+Exception Type: System.InvalidOperationException
+Exception: The model backing the 'SmizeeContext' context has changed since the database was created. Consider using Code First Migrations to update the database (http://go.microsoft.com/fwlink/?LinkId=238269).
+Source: ASP.account_login_aspx
+Stack Trace: 
+   at System.Data.Entity.CreateDatabaseIfNotExists`1.InitializeDatabase(TContext context)
+   at System.Data.Entity.Internal.InternalContext.PerformInitializationAction(Action action)
+   at System.Data.Entity.Internal.InternalContext.PerformDatabaseInitialization()
+   at System.Data.Entity.Internal.RetryAction`1.PerformAction(TInput input)
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeDatabaseAction(Action`1 action)
+   at System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   at System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   at System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Provider()
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   at SMIZEE.CodeFirstMembership.CodeFirstMembershipProvider.ValidateUser(String username, String password) in d:\Work\SMIZEE\SMIZEE\SMIZEE\Membership\CodeFirstMembershipProvider.cs:line 155
+   at System.Web.UI.WebControls.Login.AuthenticateUsingMembershipProvider(AuthenticateEventArgs e)
+   at System.Web.UI.WebControls.Login.AttemptLogin()
+   at System.Web.UI.WebControls.Login.OnBubbleEvent(Object source, EventArgs e)
+   at System.Web.UI.Control.RaiseBubbleEvent(Object source, EventArgs args)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+********** 21/03/2013 15:10:10 **********
+Exception Type: System.InvalidOperationException
+Exception: The model backing the 'SmizeeContext' context has changed since the database was created. Consider using Code First Migrations to update the database (http://go.microsoft.com/fwlink/?LinkId=238269).
+Source: ASP.account_login_aspx
+Stack Trace: 
+   at System.Data.Entity.CreateDatabaseIfNotExists`1.InitializeDatabase(TContext context)
+   at System.Data.Entity.Internal.InternalContext.<>c__DisplayClass8.<PerformDatabaseInitialization>b__6()
+   at System.Data.Entity.Internal.InternalContext.PerformInitializationAction(Action action)
+   at System.Data.Entity.Internal.InternalContext.PerformDatabaseInitialization()
+   at System.Data.Entity.Internal.LazyInternalContext.<InitializeDatabase>b__4(InternalContext c)
+   at System.Data.Entity.Internal.RetryAction`1.PerformAction(TInput input)
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeDatabaseAction(Action`1 action)
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeDatabase()
+   at System.Data.Entity.Internal.InternalContext.Initialize()
+   at System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   at System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   at System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Provider()
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   at SMIZEE.CodeFirstMembership.CodeFirstMembershipProvider.ValidateUser(String username, String password) in d:\Work\SMIZEE\SMIZEE\SMIZEE\Membership\CodeFirstMembershipProvider.cs:line 155
+   at System.Web.UI.WebControls.Login.AuthenticateUsingMembershipProvider(AuthenticateEventArgs e)
+   at System.Web.UI.WebControls.Login.OnAuthenticate(AuthenticateEventArgs e)
+   at System.Web.UI.WebControls.Login.AttemptLogin()
+   at System.Web.UI.WebControls.Login.OnBubbleEvent(Object source, EventArgs e)
+   at System.Web.UI.Control.RaiseBubbleEvent(Object source, EventArgs args)
+   at System.Web.UI.WebControls.Button.OnCommand(CommandEventArgs e)
+   at System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.WebControls.Button.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   at System.Web.UI.Page.RaisePostBackEvent(NameValueCollection postData)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+********** 21/03/2013 15:10:37 **********
+Exception Type: System.InvalidOperationException
+Exception: The model backing the 'SmizeeContext' context has changed since the database was created. Consider using Code First Migrations to update the database (http://go.microsoft.com/fwlink/?LinkId=238269).
+Source: ASP.account_login_aspx
+Stack Trace: 
+   at System.Data.Entity.CreateDatabaseIfNotExists`1.InitializeDatabase(TContext context)
+   at System.Data.Entity.Internal.InternalContext.PerformInitializationAction(Action action)
+   at System.Data.Entity.Internal.InternalContext.PerformDatabaseInitialization()
+   at System.Data.Entity.Internal.RetryAction`1.PerformAction(TInput input)
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeDatabaseAction(Action`1 action)
+   at System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   at System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   at System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Provider()
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   at SMIZEE.CodeFirstMembership.CodeFirstMembershipProvider.ValidateUser(String username, String password) in d:\Work\SMIZEE\SMIZEE\SMIZEE\Membership\CodeFirstMembershipProvider.cs:line 155
+   at System.Web.UI.WebControls.Login.AuthenticateUsingMembershipProvider(AuthenticateEventArgs e)
+   at System.Web.UI.WebControls.Login.AttemptLogin()
+   at System.Web.UI.WebControls.Login.OnBubbleEvent(Object source, EventArgs e)
+   at System.Web.UI.Control.RaiseBubbleEvent(Object source, EventArgs args)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+********** 22/03/2013 11:33:54 **********
+Exception Type: System.ArgumentOutOfRangeException
+Exception: 'ddlCompany' has a SelectedValue which is invalid because it does not exist in the list of items.
+Parameter name: value
+Source: ASP.forms_smi_03_01_aspx
+Stack Trace: 
+   at System.Web.UI.WebControls.ListControl.set_SelectedValue(String value)
+   at SMIZEE.Forms.SMI_03_01.Page_Load(Object sender, EventArgs e) in d:\Work\SMIZEE\SMIZEE\SMIZEE\Forms\SMI.03.01.aspx.cs:line 50
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+********** 22/03/2013 11:34:01 **********
+Exception Type: System.ArgumentOutOfRangeException
+Exception: 'ddlCompany' has a SelectedValue which is invalid because it does not exist in the list of items.
+Parameter name: value
+Source: ASP.forms_smi_03_01_aspx
+Stack Trace: 
+   at System.Web.UI.WebControls.ListControl.set_SelectedValue(String value)
+   at SMIZEE.Forms.SMI_03_01.Page_Load(Object sender, EventArgs e) in d:\Work\SMIZEE\SMIZEE\SMIZEE\Forms\SMI.03.01.aspx.cs:line 50
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+********** 22/03/2013 11:35:11 **********
+Exception Type: System.ArgumentOutOfRangeException
+Exception: 'ddlCompany' has a SelectedValue which is invalid because it does not exist in the list of items.
+Parameter name: value
+Source: ASP.forms_smi_03_01_aspx
+Stack Trace: 
+   at System.Web.UI.WebControls.ListControl.set_SelectedValue(String value)
+   at SMIZEE.Forms.SMI_03_01.Page_Load(Object sender, EventArgs e) in d:\Work\SMIZEE\SMIZEE\SMIZEE\Forms\SMI.03.01.aspx.cs:line 50
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+********** 22/03/2013 11:36:27 **********
+Exception Type: System.ArgumentOutOfRangeException
+Exception: 'ddlCompany' has a SelectedValue which is invalid because it does not exist in the list of items.
+Parameter name: value
+Source: ASP.forms_smi_03_02_aspx
+Stack Trace: 
+   at System.Web.UI.WebControls.ListControl.PerformDataBinding(IEnumerable dataSource)
+   at System.Web.UI.WebControls.ListControl.PerformSelect()
+   at SMIZEE.BasePage.BindCompanies(DropDownList ddl2Bind) in d:\Work\SMIZEE\SMIZEE\SMIZEE\Classes\BasePage.cs:line 133
+   at SMIZEE.Forms.SMI_03_02.OnOptions(Object sender, EventArgs e) in d:\Work\SMIZEE\SMIZEE\SMIZEE\Forms\SMI.03.02.aspx.cs:line 71
+   at System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+********** 22/03/2013 11:36:31 **********
+Exception Type: System.ArgumentOutOfRangeException
+Exception: 'ddlCompany' has a SelectedValue which is invalid because it does not exist in the list of items.
+Parameter name: value
+Source: ASP.forms_smi_03_02_aspx
+Stack Trace: 
+   at System.Web.UI.WebControls.ListControl.PerformDataBinding(IEnumerable dataSource)
+   at System.Web.UI.WebControls.ListControl.PerformSelect()
+   at SMIZEE.BasePage.BindCompanies(DropDownList ddl2Bind) in d:\Work\SMIZEE\SMIZEE\SMIZEE\Classes\BasePage.cs:line 133
+   at SMIZEE.Forms.SMI_03_02.OnOptions(Object sender, EventArgs e) in d:\Work\SMIZEE\SMIZEE\SMIZEE\Forms\SMI.03.02.aspx.cs:line 71
+   at System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+********** 22/03/2013 17:36:52 **********
+Exception Type: System.NotSupportedException
+Exception: The specified LINQ expression contains references to queries that are associated with different contexts.
+Source: ASP.forms_controlpanel_aspx
+Stack Trace: 
+   at System.Data.Objects.ELinq.Funcletizer.FuncletizingVisitor.InlineObjectQuery(ObjectQuery inlineQuery, Type expressionType)
+   at System.Data.Objects.ELinq.Funcletizer.FuncletizingVisitor.InlineValue(Expression expression, Boolean recompileOnChange)
+   at System.Data.Objects.ELinq.Funcletizer.FuncletizingVisitor.Visit(Expression exp)
+   at System.Linq.Expressions.EntityExpressionVisitor.VisitMethodCall(MethodCallExpression m)
+   at System.Data.Objects.ELinq.Funcletizer.FuncletizingVisitor.Visit(Expression exp)
+   at System.Linq.Expressions.EntityExpressionVisitor.VisitExpressionList(ReadOnlyCollection`1 original)
+   at System.Linq.Expressions.EntityExpressionVisitor.VisitMethodCall(MethodCallExpression m)
+   at System.Data.Objects.ELinq.Funcletizer.FuncletizingVisitor.Visit(Expression exp)
+   at System.Linq.Expressions.EntityExpressionVisitor.VisitExpressionList(ReadOnlyCollection`1 original)
+   at System.Linq.Expressions.EntityExpressionVisitor.VisitMethodCall(MethodCallExpression m)
+   at System.Data.Objects.ELinq.Funcletizer.FuncletizingVisitor.Visit(Expression exp)
+   at System.Linq.Expressions.EntityExpressionVisitor.VisitExpressionList(ReadOnlyCollection`1 original)
+   at System.Linq.Expressions.EntityExpressionVisitor.VisitMethodCall(MethodCallExpression m)
+   at System.Data.Objects.ELinq.Funcletizer.FuncletizingVisitor.Visit(Expression exp)
+   at System.Linq.Expressions.EntityExpressionVisitor.VisitExpressionList(ReadOnlyCollection`1 original)
+   at System.Linq.Expressions.EntityExpressionVisitor.VisitMethodCall(MethodCallExpression m)
+   at System.Data.Objects.ELinq.Funcletizer.FuncletizingVisitor.Visit(Expression exp)
+   at System.Linq.Expressions.EntityExpressionVisitor.VisitExpressionList(ReadOnlyCollection`1 original)
+   at System.Linq.Expressions.EntityExpressionVisitor.VisitMethodCall(MethodCallExpression m)
+   at System.Data.Objects.ELinq.Funcletizer.FuncletizingVisitor.Visit(Expression exp)
+   at System.Linq.Expressions.EntityExpressionVisitor.VisitExpressionList(ReadOnlyCollection`1 original)
+   at System.Linq.Expressions.EntityExpressionVisitor.VisitMethodCall(MethodCallExpression m)
+   at System.Data.Objects.ELinq.Funcletizer.FuncletizingVisitor.Visit(Expression exp)
+   at System.Linq.Expressions.EntityExpressionVisitor.VisitExpressionList(ReadOnlyCollection`1 original)
+   at System.Linq.Expressions.EntityExpressionVisitor.VisitMethodCall(MethodCallExpression m)
+   at System.Data.Objects.ELinq.Funcletizer.FuncletizingVisitor.Visit(Expression exp)
+   at System.Data.Objects.ELinq.Funcletizer.Funcletize(Expression expression, Func`1& recompileRequired)
+   at System.Data.Objects.ELinq.ExpressionConverter..ctor(Funcletizer funcletizer, Expression expression)
+   at System.Data.Objects.ELinq.ELinqQueryState.CreateExpressionConverter()
+   at System.Data.Objects.ELinq.ELinqQueryState.GetExecutionPlan(Nullable`1 forMergeOption)
+   at System.Data.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   at System.Data.Objects.ObjectQuery`1.System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+   at System.Data.Entity.Internal.Linq.InternalQuery`1.GetEnumerator()
+   at System.Data.Entity.Infrastructure.DbQuery`1.System.Collections.Generic.IEnumerable<TResult>.GetEnumerator()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at SMIZEE.Forms.ControlPanel.BindUserForms(Nullable`1 companyId, Nullable`1 productionUnitId, Nullable`1 functionalAreaId) in d:\Work\SMIZEE\SMIZEE\SMIZEE\Forms\ControlPanel.aspx.cs:line 252
+   at SMIZEE.Forms.ControlPanel.GetFormsInQueue(Nullable`1 companyId, Int32 productionUnitId, Nullable`1 functionalAreaId) in d:\Work\SMIZEE\SMIZEE\SMIZEE\Forms\ControlPanel.aspx.cs:line 121
+   at SMIZEE.Forms.ControlPanel.ProcessUserProductionUnitsForms(User user) in d:\Work\SMIZEE\SMIZEE\SMIZEE\Forms\ControlPanel.aspx.cs:line 88
+   at SMIZEE.Forms.ControlPanel.Page_Load(Object sender, EventArgs e) in d:\Work\SMIZEE\SMIZEE\SMIZEE\Forms\ControlPanel.aspx.cs:line 30
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+********** 22/03/2013 17:45:58 **********
+Exception Type: System.NotSupportedException
+Exception: The specified LINQ expression contains references to queries that are associated with different contexts.
+Source: ASP.forms_controlpanel_aspx
+Stack Trace: 
+   at System.Data.Objects.ELinq.Funcletizer.FuncletizingVisitor.InlineObjectQuery(ObjectQuery inlineQuery, Type expressionType)
+   at System.Data.Objects.ELinq.Funcletizer.FuncletizingVisitor.InlineValue(Expression expression, Boolean recompileOnChange)
+   at System.Data.Objects.ELinq.Funcletizer.FuncletizingVisitor.Visit(Expression exp)
+   at System.Linq.Expressions.EntityExpressionVisitor.VisitMethodCall(MethodCallExpression m)
+   at System.Data.Objects.ELinq.Funcletizer.FuncletizingVisitor.Visit(Expression exp)
+   at System.Linq.Expressions.EntityExpressionVisitor.VisitExpressionList(ReadOnlyCollection`1 original)
+   at System.Linq.Expressions.EntityExpressionVisitor.VisitMethodCall(MethodCallExpression m)
+   at System.Data.Objects.ELinq.Funcletizer.FuncletizingVisitor.Visit(Expression exp)
+   at System.Linq.Expressions.EntityExpressionVisitor.VisitExpressionList(ReadOnlyCollection`1 original)
+   at System.Linq.Expressions.EntityExpressionVisitor.VisitMethodCall(MethodCallExpression m)
+   at System.Data.Objects.ELinq.Funcletizer.FuncletizingVisitor.Visit(Expression exp)
+   at System.Linq.Expressions.EntityExpressionVisitor.VisitExpressionList(ReadOnlyCollection`1 original)
+   at System.Linq.Expressions.EntityExpressionVisitor.VisitMethodCall(MethodCallExpression m)
+   at System.Data.Objects.ELinq.Funcletizer.FuncletizingVisitor.Visit(Expression exp)
+   at System.Linq.Expressions.EntityExpressionVisitor.VisitExpressionList(ReadOnlyCollection`1 original)
+   at System.Linq.Expressions.EntityExpressionVisitor.VisitMethodCall(MethodCallExpression m)
+   at System.Data.Objects.ELinq.Funcletizer.FuncletizingVisitor.Visit(Expression exp)
+   at System.Linq.Expressions.EntityExpressionVisitor.VisitExpressionList(ReadOnlyCollection`1 original)
+   at System.Linq.Expressions.EntityExpressionVisitor.VisitMethodCall(MethodCallExpression m)
+   at System.Data.Objects.ELinq.Funcletizer.FuncletizingVisitor.Visit(Expression exp)
+   at System.Linq.Expressions.EntityExpressionVisitor.VisitExpressionList(ReadOnlyCollection`1 original)
+   at System.Linq.Expressions.EntityExpressionVisitor.VisitMethodCall(MethodCallExpression m)
+   at System.Data.Objects.ELinq.Funcletizer.FuncletizingVisitor.Visit(Expression exp)
+   at System.Linq.Expressions.EntityExpressionVisitor.VisitExpressionList(ReadOnlyCollection`1 original)
+   at System.Linq.Expressions.EntityExpressionVisitor.VisitMethodCall(MethodCallExpression m)
+   at System.Data.Objects.ELinq.Funcletizer.FuncletizingVisitor.Visit(Expression exp)
+   at System.Data.Objects.ELinq.Funcletizer.Funcletize(Expression expression, Func`1& recompileRequired)
+   at System.Data.Objects.ELinq.ExpressionConverter..ctor(Funcletizer funcletizer, Expression expression)
+   at System.Data.Objects.ELinq.ELinqQueryState.CreateExpressionConverter()
+   at System.Data.Objects.ELinq.ELinqQueryState.GetExecutionPlan(Nullable`1 forMergeOption)
+   at System.Data.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   at System.Data.Objects.ObjectQuery`1.System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+   at System.Data.Entity.Internal.Linq.InternalQuery`1.GetEnumerator()
+   at System.Data.Entity.Infrastructure.DbQuery`1.System.Collections.Generic.IEnumerable<TResult>.GetEnumerator()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at SMIZEE.Forms.ControlPanel.BindUserForms(Nullable`1 companyId, Nullable`1 productionUnitId, Nullable`1 functionalAreaId) in d:\Work\SMIZEE\SMIZEE\SMIZEE\Forms\ControlPanel.aspx.cs:line 210
+   at SMIZEE.Forms.ControlPanel.GetFormsInQueue(Nullable`1 companyId, Int32 productionUnitId, Nullable`1 functionalAreaId) in d:\Work\SMIZEE\SMIZEE\SMIZEE\Forms\ControlPanel.aspx.cs:line 121
+   at SMIZEE.Forms.ControlPanel.ProcessUserProductionUnitsForms(User user) in d:\Work\SMIZEE\SMIZEE\SMIZEE\Forms\ControlPanel.aspx.cs:line 88
+   at SMIZEE.Forms.ControlPanel.Page_Load(Object sender, EventArgs e) in d:\Work\SMIZEE\SMIZEE\SMIZEE\Forms\ControlPanel.aspx.cs:line 30
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+********** 25/03/2013 18:15:28 **********
+Exception Type: System.Web.HttpException
+Exception: DataBinding: 'SMIZEE.Models.DevelopmentPhase' does not contain a property with the name 'OperationalLicensesFormId'.
+Source: ASP.forms_smi_03_03_aspx
+Stack Trace: 
+   at System.Web.UI.DataBinder.GetPropertyValue(Object container, String propName)
+   at System.Web.UI.DataBinder.Eval(Object container, String[] expressionParts)
+   at ASP.forms_smi_03_03_aspx.__DataBinding__control45(Object sender, EventArgs e) in d:\Work\SMIZEE\SMIZEE\SMIZEE\Forms\SMI.03.03.aspx:line 93
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   at System.Web.UI.Control.DataBindChildren()
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   at System.Web.UI.Control.DataBindChildren()
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   at System.Web.UI.WebControls.GridView.CreateRow(Int32 rowIndex, Int32 dataSourceIndex, DataControlRowType rowType, DataControlRowState rowState, Boolean dataBind, Object dataItem, DataControlField[] fields, TableRowCollection rows, PagedDataSource pagedDataSource)
+   at System.Web.UI.WebControls.GridView.CreateChildControls(IEnumerable dataSource, Boolean dataBinding)
+   at System.Web.UI.WebControls.CompositeDataBoundControl.PerformDataBinding(IEnumerable data)
+   at System.Web.UI.WebControls.GridView.PerformDataBinding(IEnumerable data)
+   at System.Web.UI.WebControls.DataBoundControl.OnDataSourceViewSelectCallback(IEnumerable data)
+   at System.Web.UI.WebControls.DataBoundControl.PerformSelect()
+   at SMIZEE.Forms.SMI_03_03.BindDevelopmentPhases() in d:\Work\SMIZEE\SMIZEE\SMIZEE\Forms\SMI.03.03.aspx.cs:line 276
+   at SMIZEE.Forms.SMI_03_03.Page_Load(Object sender, EventArgs e) in d:\Work\SMIZEE\SMIZEE\SMIZEE\Forms\SMI.03.03.aspx.cs:line 35
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+********** 25/03/2013 18:17:34 **********
+Exception Type: System.Web.HttpException
+Exception: DataBinding: 'SMIZEE.Models.DevelopmentPhase' does not contain a property with the name 'ProductionUnitsNumber'.
+Source: ASP.forms_smi_03_03_aspx
+Stack Trace: 
+   at System.Web.UI.DataBinder.GetPropertyValue(Object container, String propName)
+   at System.Web.UI.DataBinder.Eval(Object container, String[] expressionParts)
+   at ASP.forms_smi_03_03_aspx.__DataBinding__control129(Object sender, EventArgs e) in d:\Work\SMIZEE\SMIZEE\SMIZEE\Forms\SMI.03.03.aspx:line 214
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   at System.Web.UI.Control.DataBindChildren()
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   at System.Web.UI.Control.DataBindChildren()
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   at System.Web.UI.WebControls.GridView.CreateRow(Int32 rowIndex, Int32 dataSourceIndex, DataControlRowType rowType, DataControlRowState rowState, Boolean dataBind, Object dataItem, DataControlField[] fields, TableRowCollection rows, PagedDataSource pagedDataSource)
+   at System.Web.UI.WebControls.GridView.CreateChildControls(IEnumerable dataSource, Boolean dataBinding)
+   at System.Web.UI.WebControls.CompositeDataBoundControl.PerformDataBinding(IEnumerable data)
+   at System.Web.UI.WebControls.GridView.PerformDataBinding(IEnumerable data)
+   at System.Web.UI.WebControls.DataBoundControl.OnDataSourceViewSelectCallback(IEnumerable data)
+   at System.Web.UI.WebControls.DataBoundControl.PerformSelect()
+   at SMIZEE.Forms.SMI_03_03.BindDevelopmentPhases() in d:\Work\SMIZEE\SMIZEE\SMIZEE\Forms\SMI.03.03.aspx.cs:line 276
+   at SMIZEE.Forms.SMI_03_03.Page_Load(Object sender, EventArgs e) in d:\Work\SMIZEE\SMIZEE\SMIZEE\Forms\SMI.03.03.aspx.cs:line 35
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+********** 25/03/2013 18:38:35 **********
+Exception Type: System.Web.HttpException
+Exception: DataBinding: 'SMIZEE.Models.DevelopmentPhase' does not contain a property with the name 'DevelopmentPhaseDescription'.
+Source: ASP.forms_smi_03_03_aspx
+Stack Trace: 
+   at System.Web.UI.DataBinder.GetPropertyValue(Object container, String propName)
+   at System.Web.UI.DataBinder.Eval(Object container, String[] expressionParts)
+   at ASP.forms_smi_03_03_aspx.__DataBinding__control119(Object sender, EventArgs e) in d:\Work\SMIZEE\SMIZEE\SMIZEE\Forms\SMI.03.03.aspx:line 209
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   at System.Web.UI.Control.DataBindChildren()
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   at System.Web.UI.Control.DataBindChildren()
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   at System.Web.UI.WebControls.GridView.CreateRow(Int32 rowIndex, Int32 dataSourceIndex, DataControlRowType rowType, DataControlRowState rowState, Boolean dataBind, Object dataItem, DataControlField[] fields, TableRowCollection rows, PagedDataSource pagedDataSource)
+   at System.Web.UI.WebControls.GridView.CreateChildControls(IEnumerable dataSource, Boolean dataBinding)
+   at System.Web.UI.WebControls.CompositeDataBoundControl.PerformDataBinding(IEnumerable data)
+   at System.Web.UI.WebControls.GridView.PerformDataBinding(IEnumerable data)
+   at System.Web.UI.WebControls.DataBoundControl.OnDataSourceViewSelectCallback(IEnumerable data)
+   at System.Web.UI.WebControls.DataBoundControl.PerformSelect()
+   at SMIZEE.Forms.SMI_03_03.BindDevelopmentPhases() in d:\Work\SMIZEE\SMIZEE\SMIZEE\Forms\SMI.03.03.aspx.cs:line 283
+   at SMIZEE.Forms.SMI_03_03.Page_Load(Object sender, EventArgs e) in d:\Work\SMIZEE\SMIZEE\SMIZEE\Forms\SMI.03.03.aspx.cs:line 35
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+********** 25/03/2013 18:39:40 **********
+Exception Type: System.Web.HttpException
+Exception: DataBinding: 'SMIZEE.Models.DevelopmentPhase' does not contain a property with the name 'DevelopmentPhaseDescription'.
+Source: ASP.forms_smi_03_03_aspx
+Stack Trace: 
+   at System.Web.UI.DataBinder.GetPropertyValue(Object container, String propName)
+   at System.Web.UI.DataBinder.Eval(Object container, String[] expressionParts)
+   at ASP.forms_smi_03_03_aspx.__DataBinding__control119(Object sender, EventArgs e) in d:\Work\SMIZEE\SMIZEE\SMIZEE\Forms\SMI.03.03.aspx:line 209
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   at System.Web.UI.Control.DataBindChildren()
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   at System.Web.UI.Control.DataBindChildren()
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   at System.Web.UI.WebControls.GridView.CreateRow(Int32 rowIndex, Int32 dataSourceIndex, DataControlRowType rowType, DataControlRowState rowState, Boolean dataBind, Object dataItem, DataControlField[] fields, TableRowCollection rows, PagedDataSource pagedDataSource)
+   at System.Web.UI.WebControls.GridView.CreateChildControls(IEnumerable dataSource, Boolean dataBinding)
+   at System.Web.UI.WebControls.CompositeDataBoundControl.PerformDataBinding(IEnumerable data)
+   at System.Web.UI.WebControls.GridView.PerformDataBinding(IEnumerable data)
+   at System.Web.UI.WebControls.DataBoundControl.OnDataSourceViewSelectCallback(IEnumerable data)
+   at System.Web.UI.WebControls.DataBoundControl.PerformSelect()
+   at SMIZEE.Forms.SMI_03_03.BindDevelopmentPhases() in d:\Work\SMIZEE\SMIZEE\SMIZEE\Forms\SMI.03.03.aspx.cs:line 283
+   at SMIZEE.Forms.SMI_03_03.Page_Load(Object sender, EventArgs e) in d:\Work\SMIZEE\SMIZEE\SMIZEE\Forms\SMI.03.03.aspx.cs:line 35
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+********** 25/03/2013 18:40:17 **********
+Exception Type: System.Web.HttpException
+Exception: DataBinding: 'SMIZEE.Models.DevelopmentPhase' does not contain a property with the name 'DevelopmentPhaseDescription'.
+Source: ASP.forms_smi_03_03_aspx
+Stack Trace: 
+   at System.Web.UI.DataBinder.GetPropertyValue(Object container, String propName)
+   at System.Web.UI.DataBinder.Eval(Object container, String[] expressionParts)
+   at ASP.forms_smi_03_03_aspx.__DataBinding__control119(Object sender, EventArgs e) in d:\Work\SMIZEE\SMIZEE\SMIZEE\Forms\SMI.03.03.aspx:line 209
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   at System.Web.UI.Control.DataBindChildren()
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   at System.Web.UI.Control.DataBindChildren()
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   at System.Web.UI.WebControls.GridView.CreateRow(Int32 rowIndex, Int32 dataSourceIndex, DataControlRowType rowType, DataControlRowState rowState, Boolean dataBind, Object dataItem, DataControlField[] fields, TableRowCollection rows, PagedDataSource pagedDataSource)
+   at System.Web.UI.WebControls.GridView.CreateChildControls(IEnumerable dataSource, Boolean dataBinding)
+   at System.Web.UI.WebControls.CompositeDataBoundControl.PerformDataBinding(IEnumerable data)
+   at System.Web.UI.WebControls.GridView.PerformDataBinding(IEnumerable data)
+   at System.Web.UI.WebControls.DataBoundControl.OnDataSourceViewSelectCallback(IEnumerable data)
+   at System.Web.UI.WebControls.DataBoundControl.PerformSelect()
+   at SMIZEE.Forms.SMI_03_03.BindDevelopmentPhases() in d:\Work\SMIZEE\SMIZEE\SMIZEE\Forms\SMI.03.03.aspx.cs:line 283
+   at SMIZEE.Forms.SMI_03_03.Page_Load(Object sender, EventArgs e) in d:\Work\SMIZEE\SMIZEE\SMIZEE\Forms\SMI.03.03.aspx.cs:line 35
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+********** 25/03/2013 19:17:25 **********
+Exception Type: System.NullReferenceException
+Exception: Object reference not set to an instance of an object.
+Source: ASP.forms_smi_03_03_aspx
+Stack Trace: 
+   at SMIZEE.Models.CxOperationalLicensesFormPhase.GetFormDevelopmentPhase(Int32 operationalLicensesFormID, Int32 developmentPhaseID) in d:\Work\SMIZEE\SMIZEE\SMIZEE.Models\OperationalLicensesFormPhase.cs:line 46
+   at SMIZEE.Forms.SMI_03_03.OnFormGridViewRowDataBound(Object sender, GridViewRowEventArgs e) in d:\Work\SMIZEE\SMIZEE\SMIZEE\Forms\SMI.03.03.aspx.cs:line 334
+   at System.Web.UI.WebControls.GridView.CreateRow(Int32 rowIndex, Int32 dataSourceIndex, DataControlRowType rowType, DataControlRowState rowState, Boolean dataBind, Object dataItem, DataControlField[] fields, TableRowCollection rows, PagedDataSource pagedDataSource)
+   at System.Web.UI.WebControls.GridView.CreateChildControls(IEnumerable dataSource, Boolean dataBinding)
+   at System.Web.UI.WebControls.CompositeDataBoundControl.PerformDataBinding(IEnumerable data)
+   at System.Web.UI.WebControls.GridView.PerformDataBinding(IEnumerable data)
+   at System.Web.UI.WebControls.DataBoundControl.OnDataSourceViewSelectCallback(IEnumerable data)
+   at System.Web.UI.WebControls.DataBoundControl.PerformSelect()
+   at SMIZEE.Forms.SMI_03_03.BindDevelopmentPhases() in d:\Work\SMIZEE\SMIZEE\SMIZEE\Forms\SMI.03.03.aspx.cs:line 270
+   at SMIZEE.Forms.SMI_03_03.ShowCurrentForm(Int32 formId) in d:\Work\SMIZEE\SMIZEE\SMIZEE\Forms\SMI.03.03.aspx.cs:line 143
+   at SMIZEE.Forms.SMI_03_03.Page_Load(Object sender, EventArgs e) in d:\Work\SMIZEE\SMIZEE\SMIZEE\Forms\SMI.03.03.aspx.cs:line 40
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+********** 26/03/2013 10:29:51 **********
+Exception Type: System.NullReferenceException
+Exception: Object reference not set to an instance of an object.
+Source: ASP.forms_smi_03_03_aspx
+Stack Trace: 
+   at SMIZEE.Forms.SMI_03_03.OnFormGridViewRowDataBound(Object sender, GridViewRowEventArgs e) in d:\Work\SMIZEE\SMIZEE\SMIZEE\Forms\SMI.03.03.aspx.cs:line 359
+   at System.Web.UI.WebControls.GridView.CreateRow(Int32 rowIndex, Int32 dataSourceIndex, DataControlRowType rowType, DataControlRowState rowState, Boolean dataBind, Object dataItem, DataControlField[] fields, TableRowCollection rows, PagedDataSource pagedDataSource)
+   at System.Web.UI.WebControls.GridView.CreateChildControls(IEnumerable dataSource, Boolean dataBinding)
+   at System.Web.UI.WebControls.CompositeDataBoundControl.PerformDataBinding(IEnumerable data)
+   at System.Web.UI.WebControls.GridView.PerformDataBinding(IEnumerable data)
+   at System.Web.UI.WebControls.DataBoundControl.OnDataSourceViewSelectCallback(IEnumerable data)
+   at System.Web.UI.WebControls.DataBoundControl.PerformSelect()
+   at SMIZEE.Forms.SMI_03_03.BindDevelopmentPhases() in d:\Work\SMIZEE\SMIZEE\SMIZEE\Forms\SMI.03.03.aspx.cs:line 292
+   at SMIZEE.Forms.SMI_03_03.ShowCurrentForm(Int32 formId) in d:\Work\SMIZEE\SMIZEE\SMIZEE\Forms\SMI.03.03.aspx.cs:line 143
+   at SMIZEE.Forms.SMI_03_03.Page_Load(Object sender, EventArgs e) in d:\Work\SMIZEE\SMIZEE\SMIZEE\Forms\SMI.03.03.aspx.cs:line 40
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+********** 26/03/2013 10:30:46 **********
+Exception Type: System.NullReferenceException
+Exception: Object reference not set to an instance of an object.
+Source: ASP.forms_smi_03_03_aspx
+Stack Trace: 
+   at SMIZEE.Forms.SMI_03_03.OnFormGridViewRowDataBound(Object sender, GridViewRowEventArgs e) in d:\Work\SMIZEE\SMIZEE\SMIZEE\Forms\SMI.03.03.aspx.cs:line 359
+   at System.Web.UI.WebControls.GridView.CreateRow(Int32 rowIndex, Int32 dataSourceIndex, DataControlRowType rowType, DataControlRowState rowState, Boolean dataBind, Object dataItem, DataControlField[] fields, TableRowCollection rows, PagedDataSource pagedDataSource)
+   at System.Web.UI.WebControls.GridView.CreateChildControls(IEnumerable dataSource, Boolean dataBinding)
+   at System.Web.UI.WebControls.CompositeDataBoundControl.PerformDataBinding(IEnumerable data)
+   at System.Web.UI.WebControls.GridView.PerformDataBinding(IEnumerable data)
+   at System.Web.UI.WebControls.DataBoundControl.OnDataSourceViewSelectCallback(IEnumerable data)
+   at System.Web.UI.WebControls.DataBoundControl.PerformSelect()
+   at SMIZEE.Forms.SMI_03_03.BindDevelopmentPhases() in d:\Work\SMIZEE\SMIZEE\SMIZEE\Forms\SMI.03.03.aspx.cs:line 292
+   at SMIZEE.Forms.SMI_03_03.ShowCurrentForm(Int32 formId) in d:\Work\SMIZEE\SMIZEE\SMIZEE\Forms\SMI.03.03.aspx.cs:line 143
+   at SMIZEE.Forms.SMI_03_03.Page_Load(Object sender, EventArgs e) in d:\Work\SMIZEE\SMIZEE\SMIZEE\Forms\SMI.03.03.aspx.cs:line 40
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+********** 26/03/2013 12:33:05 **********
+Exception Type: System.NotSupportedException
+Exception: The specified LINQ expression contains references to queries that are associated with different contexts.
+Source: ASP.forms_controlpanel_aspx
+Stack Trace: 
+   at System.Data.Objects.ELinq.Funcletizer.FuncletizingVisitor.InlineObjectQuery(ObjectQuery inlineQuery, Type expressionType)
+   at System.Data.Objects.ELinq.Funcletizer.FuncletizingVisitor.InlineValue(Expression expression, Boolean recompileOnChange)
+   at System.Data.Objects.ELinq.Funcletizer.FuncletizingVisitor.Visit(Expression exp)
+   at System.Linq.Expressions.EntityExpressionVisitor.VisitMethodCall(MethodCallExpression m)
+   at System.Data.Objects.ELinq.Funcletizer.FuncletizingVisitor.Visit(Expression exp)
+   at System.Linq.Expressions.EntityExpressionVisitor.VisitExpressionList(ReadOnlyCollection`1 original)
+   at System.Linq.Expressions.EntityExpressionVisitor.VisitMethodCall(MethodCallExpression m)
+   at System.Data.Objects.ELinq.Funcletizer.FuncletizingVisitor.Visit(Expression exp)
+   at System.Linq.Expressions.EntityExpressionVisitor.VisitExpressionList(ReadOnlyCollection`1 original)
+   at System.Linq.Expressions.EntityExpressionVisitor.VisitMethodCall(MethodCallExpression m)
+   at System.Data.Objects.ELinq.Funcletizer.FuncletizingVisitor.Visit(Expression exp)
+   at System.Linq.Expressions.EntityExpressionVisitor.VisitExpressionList(ReadOnlyCollection`1 original)
+   at System.Linq.Expressions.EntityExpressionVisitor.VisitMethodCall(MethodCallExpression m)
+   at System.Data.Objects.ELinq.Funcletizer.FuncletizingVisitor.Visit(Expression exp)
+   at System.Linq.Expressions.EntityExpressionVisitor.VisitExpressionList(ReadOnlyCollection`1 original)
+   at System.Linq.Expressions.EntityExpressionVisitor.VisitMethodCall(MethodCallExpression m)
+   at System.Data.Objects.ELinq.Funcletizer.FuncletizingVisitor.Visit(Expression exp)
+   at System.Data.Objects.ELinq.Funcletizer.Funcletize(Expression expression, Func`1& recompileRequired)
+   at System.Data.Objects.ELinq.ExpressionConverter..ctor(Funcletizer funcletizer, Expression expression)
+   at System.Data.Objects.ELinq.ELinqQueryState.CreateExpressionConverter()
+   at System.Data.Objects.ELinq.ELinqQueryState.GetExecutionPlan(Nullable`1 forMergeOption)
+   at System.Data.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   at System.Data.Objects.ObjectQuery`1.System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at SMIZEE.Forms.ControlPanel.BindUserForms(Nullable`1 userId, Nullable`1 companyId, Nullable`1 functionalAreaId) in d:\Work\SMIZEE\SMIZEE\SMIZEE\Forms\ControlPanel.aspx.cs:line 216
+   at SMIZEE.Forms.ControlPanel.ProcessUserProductionUnitsForms(User user) in d:\Work\SMIZEE\SMIZEE\SMIZEE\Forms\ControlPanel.aspx.cs:line 90
+   at SMIZEE.Forms.ControlPanel.Page_Load(Object sender, EventArgs e) in d:\Work\SMIZEE\SMIZEE\SMIZEE\Forms\ControlPanel.aspx.cs:line 30
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+********** 26/03/2013 16:17:45 **********
+Exception Type: System.InvalidOperationException
+Exception: Validation of Anti-XSRF token failed.
+Source: ASP.forms_controlpanel_aspx
+Stack Trace: 
+   at SMIZEE.SiteMaster.master_Page_PreLoad(Object sender, EventArgs e) in d:\Work\SMIZEE\SMIZEE\SMIZEE\Site.Master.cs:line 68
+   at System.EventHandler.Invoke(Object sender, EventArgs e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+********** 26/03/2013 16:17:49 **********
+Exception Type: System.InvalidOperationException
+Exception: Validation of Anti-XSRF token failed.
+Source: ASP.forms_controlpanel_aspx
+Stack Trace: 
+   at SMIZEE.SiteMaster.master_Page_PreLoad(Object sender, EventArgs e) in d:\Work\SMIZEE\SMIZEE\SMIZEE\Site.Master.cs:line 68
+   at System.EventHandler.Invoke(Object sender, EventArgs e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+********** 27/03/2013 10:58:55 **********
+Exception Type: System.OverflowException
+Exception: Value was either too large or too small for an Int32.
+Source: ASP.forms_smi_03_04_aspx
+Stack Trace: 
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at SMIZEE.BasePage.GetIntValueFromInput(String amount) in d:\Work\SMIZEE\SMIZEE\SMIZEE\Classes\BasePage.cs:line 226
+   at SMIZEE.Forms.SMI_03_04.UpdateEvent(Int32 formState) in d:\Work\SMIZEE\SMIZEE\SMIZEE\Forms\SMI.03.04.aspx.cs:line 184
+   at SMIZEE.Forms.SMI_03_04.OnUpdate(Object sender, EventArgs e) in d:\Work\SMIZEE\SMIZEE\SMIZEE\Forms\SMI.03.04.aspx.cs:line 175
+   at System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+********** 02/04/2013 15:30:24 **********
+Exception Type: System.InvalidOperationException
+Exception: Nullable object must have a value.
+Source: ASP.forms_smi_03_02_aspx
+Stack Trace: 
+   at System.Nullable`1.get_Value()
+   at SMIZEE.Forms.SMI_03_02.ShowCurrentForm(Int32 formId) in d:\Work\SMIZEE\SMIZEE\SMIZEE\Forms\SMI.03.02.aspx.cs:line 163
+   at SMIZEE.Forms.SMI_03_02.Page_Load(Object sender, EventArgs e) in d:\Work\SMIZEE\SMIZEE\SMIZEE\Forms\SMI.03.02.aspx.cs:line 40
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+********** 02/04/2013 17:37:03 **********
+Exception Type: System.InvalidOperationException
+Exception: The model backing the 'SmizeeContext' context has changed since the database was created. Consider using Code First Migrations to update the database (http://go.microsoft.com/fwlink/?LinkId=238269).
+Source: ASP.forms_controlpanel_aspx
+Stack Trace: 
+   at System.Data.Entity.CreateDatabaseIfNotExists`1.InitializeDatabase(TContext context)
+   at System.Data.Entity.Internal.InternalContext.PerformInitializationAction(Action action)
+   at System.Data.Entity.Internal.InternalContext.PerformDatabaseInitialization()
+   at System.Data.Entity.Internal.RetryAction`1.PerformAction(TInput input)
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeDatabaseAction(Action`1 action)
+   at System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   at System.Data.Entity.Internal.Linq.InternalSet`1.GetEnumerator()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at SMIZEE.Models.CxCompany.GetCompaniesList() in d:\Work\SMIZEE\SMIZEE\SMIZEE.Models\Company.cs:line 70
+   at SMIZEE.BasePage.BindCompanies(DropDownList ddl2Bind) in d:\Work\SMIZEE\SMIZEE\SMIZEE\Classes\BasePage.cs:line 129
+   at SMIZEE.Forms.ControlPanel.Page_Load(Object sender, EventArgs e) in d:\Work\SMIZEE\SMIZEE\SMIZEE\Forms\ControlPanel.aspx.cs:line 21
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+********** 03/04/2013 10:17:43 **********
+Exception Type: System.InvalidOperationException
+Exception: The model backing the 'SmizeeContext' context has changed since the database was created. Consider using Code First Migrations to update the database (http://go.microsoft.com/fwlink/?LinkId=238269).
+Source: ASP.forms_controlpanel_aspx
+Stack Trace: 
+   at System.Data.Entity.CreateDatabaseIfNotExists`1.InitializeDatabase(TContext context)
+   at System.Data.Entity.Internal.InternalContext.PerformInitializationAction(Action action)
+   at System.Data.Entity.Internal.InternalContext.PerformDatabaseInitialization()
+   at System.Data.Entity.Internal.RetryAction`1.PerformAction(TInput input)
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeDatabaseAction(Action`1 action)
+   at System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   at System.Data.Entity.Internal.Linq.InternalSet`1.GetEnumerator()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at SMIZEE.Models.CxCompany.GetCompaniesList() in d:\Work\SMIZEE\SMIZEE\SMIZEE.Models\Company.cs:line 70
+   at SMIZEE.BasePage.BindCompanies(DropDownList ddl2Bind) in d:\Work\SMIZEE\SMIZEE\SMIZEE\Classes\BasePage.cs:line 129
+   at SMIZEE.Forms.ControlPanel.Page_Load(Object sender, EventArgs e) in d:\Work\SMIZEE\SMIZEE\SMIZEE\Forms\ControlPanel.aspx.cs:line 21
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+********** 05/04/2013 16:46:25 **********
+Exception Type: System.Web.HttpException
+Exception: DataBinding: '<>f__AnonymousType9`6[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]' does not contain a property with the name 'FormDate'.
+Source: ASP.forms_controlpanel_aspx
+Stack Trace: 
+   at System.Web.UI.DataBinder.GetPropertyValue(Object container, String propName)
+   at System.Web.UI.DataBinder.Eval(Object container, String[] expressionParts)
+   at ASP.forms_controlpanel_aspx.__DataBinding__control51(Object sender, EventArgs e) in d:\Work\SMIZEE\SMIZEE\SMIZEE\Forms\ControlPanel.aspx:line 82
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   at System.Web.UI.Control.DataBindChildren()
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   at System.Web.UI.Control.DataBindChildren()
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   at System.Web.UI.WebControls.GridView.CreateRow(Int32 rowIndex, Int32 dataSourceIndex, DataControlRowType rowType, DataControlRowState rowState, Boolean dataBind, Object dataItem, DataControlField[] fields, TableRowCollection rows, PagedDataSource pagedDataSource)
+   at System.Web.UI.WebControls.GridView.CreateChildControls(IEnumerable dataSource, Boolean dataBinding)
+   at System.Web.UI.WebControls.CompositeDataBoundControl.PerformDataBinding(IEnumerable data)
+   at System.Web.UI.WebControls.GridView.PerformDataBinding(IEnumerable data)
+   at System.Web.UI.WebControls.DataBoundControl.OnDataSourceViewSelectCallback(IEnumerable data)
+   at System.Web.UI.WebControls.DataBoundControl.PerformSelect()
+   at SMIZEE.Forms.ControlPanel.BindZEEUserForms(User user) in d:\Work\SMIZEE\SMIZEE\SMIZEE\Forms\ControlPanel.aspx.cs:line 318
+   at SMIZEE.Forms.ControlPanel.Page_Load(Object sender, EventArgs e) in d:\Work\SMIZEE\SMIZEE\SMIZEE\Forms\ControlPanel.aspx.cs:line 35
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+********** 06/04/2013 10:57:02 **********
+Inner Exception Type: System.Data.UpdateException
+Inner Exception: An error occurred while updating the entries. See the inner exception for details.
+Inner Source: System.Data.Entity
+Inner Stack Trace: 
+   at System.Data.Mapping.Update.Internal.UpdateTranslator.Update(IEntityStateManager stateManager, IEntityAdapter adapter)
+   at System.Data.Objects.ObjectContext.SaveChanges(SaveOptions options)
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+Exception Type: System.Data.Entity.Infrastructure.DbUpdateException
+Exception: An error occurred while updating the entries. See the inner exception for details.
+Source: ASP.forms_controlpanel_aspx
+Stack Trace: 
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at SMIZEE.Models.CxHumanResourceForm.CreateForm(Int32 formId, Int32 productionUnitId, Int32 periodNumber, DateTime formDate) in d:\Work\SMIZEE\SMIZEE\SMIZEE.Models\HumanResourceForm.cs:line 92
+   at SMIZEE.Forms.ControlPanel.CreateNewForm(DateTime referenceDate, Int32 formID, Int32 productionUnitId, String periodicityCode, Func`5 createFormMethod, Func`4 checkFormMethod) in d:\Work\SMIZEE\SMIZEE\SMIZEE\Forms\ControlPanel.aspx.cs:line 441
+   at SMIZEE.Forms.ControlPanel.GetHumanResourceFormInQueue(Form currentForm, Int32 productionUnitId) in d:\Work\SMIZEE\SMIZEE\SMIZEE\Forms\ControlPanel.aspx.cs:line 368
+   at SMIZEE.Forms.ControlPanel.GetFormsInQueue(Nullable`1 companyId, Int32 productionUnitId, Nullable`1 functionalAreaId) in d:\Work\SMIZEE\SMIZEE\SMIZEE\Forms\ControlPanel.aspx.cs:line 117
+   at SMIZEE.Forms.ControlPanel.ProcessUserProductionUnitsForms(User user) in d:\Work\SMIZEE\SMIZEE\SMIZEE\Forms\ControlPanel.aspx.cs:line 91
+   at SMIZEE.Forms.ControlPanel.Page_Load(Object sender, EventArgs e) in d:\Work\SMIZEE\SMIZEE\SMIZEE\Forms\ControlPanel.aspx.cs:line 30
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+********** 06/04/2013 16:12:43 **********
+Inner Exception Type: System.Data.UpdateException
+Inner Exception: An error occurred while updating the entries. See the inner exception for details.
+Inner Source: System.Data.Entity
+Inner Stack Trace: 
+   at System.Data.Mapping.Update.Internal.UpdateTranslator.Update(IEntityStateManager stateManager, IEntityAdapter adapter)
+   at System.Data.Objects.ObjectContext.SaveChanges(SaveOptions options)
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+Exception Type: System.Data.Entity.Infrastructure.DbUpdateException
+Exception: An error occurred while updating the entries. See the inner exception for details.
+Source: ASP.forms_controlpanel_aspx
+Stack Trace: 
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at SMIZEE.Models.CxHumanResourceForm.CreateForm(Int32 formId, Int32 productionUnitId, Int32 periodNumber, DateTime formDate) in d:\Work\SMIZEE\SMIZEE\SMIZEE.Models\HumanResourceForm.cs:line 92
+   at SMIZEE.Forms.ControlPanel.CreateNewForm(DateTime referenceDate, Int32 formID, Int32 productionUnitId, String periodicityCode, Func`5 createFormMethod, Func`4 checkFormMethod) in d:\Work\SMIZEE\SMIZEE\SMIZEE\Forms\ControlPanel.aspx.cs:line 441
+   at SMIZEE.Forms.ControlPanel.GetHumanResourceFormInQueue(Form currentForm, Int32 productionUnitId) in d:\Work\SMIZEE\SMIZEE\SMIZEE\Forms\ControlPanel.aspx.cs:line 368
+   at SMIZEE.Forms.ControlPanel.GetFormsInQueue(Nullable`1 companyId, Int32 productionUnitId, Nullable`1 functionalAreaId) in d:\Work\SMIZEE\SMIZEE\SMIZEE\Forms\ControlPanel.aspx.cs:line 117
+   at SMIZEE.Forms.ControlPanel.ProcessUserProductionUnitsForms(User user) in d:\Work\SMIZEE\SMIZEE\SMIZEE\Forms\ControlPanel.aspx.cs:line 91
+   at SMIZEE.Forms.ControlPanel.Page_Load(Object sender, EventArgs e) in d:\Work\SMIZEE\SMIZEE\SMIZEE\Forms\ControlPanel.aspx.cs:line 30
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+********** 06/04/2013 16:14:04 **********
+Inner Exception Type: System.Data.UpdateException
+Inner Exception: An error occurred while updating the entries. See the inner exception for details.
+Inner Source: System.Data.Entity
+Inner Stack Trace: 
+   at System.Data.Mapping.Update.Internal.UpdateTranslator.Update(IEntityStateManager stateManager, IEntityAdapter adapter)
+   at System.Data.Objects.ObjectContext.SaveChanges(SaveOptions options)
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+Exception Type: System.Data.Entity.Infrastructure.DbUpdateException
+Exception: An error occurred while updating the entries. See the inner exception for details.
+Source: ASP.forms_controlpanel_aspx
+Stack Trace: 
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at SMIZEE.Models.CxHumanResourceForm.CreateForm(Int32 formId, Int32 productionUnitId, Int32 periodNumber, DateTime formDate) in d:\Work\SMIZEE\SMIZEE\SMIZEE.Models\HumanResourceForm.cs:line 92
+   at SMIZEE.Forms.ControlPanel.CreateNewForm(DateTime referenceDate, Int32 formID, Int32 productionUnitId, String periodicityCode, Func`5 createFormMethod, Func`4 checkFormMethod) in d:\Work\SMIZEE\SMIZEE\SMIZEE\Forms\ControlPanel.aspx.cs:line 441
+   at SMIZEE.Forms.ControlPanel.GetHumanResourceFormInQueue(Form currentForm, Int32 productionUnitId) in d:\Work\SMIZEE\SMIZEE\SMIZEE\Forms\ControlPanel.aspx.cs:line 368
+   at SMIZEE.Forms.ControlPanel.GetFormsInQueue(Nullable`1 companyId, Int32 productionUnitId, Nullable`1 functionalAreaId) in d:\Work\SMIZEE\SMIZEE\SMIZEE\Forms\ControlPanel.aspx.cs:line 117
+   at SMIZEE.Forms.ControlPanel.ProcessUserProductionUnitsForms(User user) in d:\Work\SMIZEE\SMIZEE\SMIZEE\Forms\ControlPanel.aspx.cs:line 91
+   at SMIZEE.Forms.ControlPanel.Page_Load(Object sender, EventArgs e) in d:\Work\SMIZEE\SMIZEE\SMIZEE\Forms\ControlPanel.aspx.cs:line 30
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+********** 06/04/2013 16:16:19 **********
+Inner Exception Type: System.Data.UpdateException
+Inner Exception: An error occurred while updating the entries. See the inner exception for details.
+Inner Source: System.Data.Entity
+Inner Stack Trace: 
+   at System.Data.Mapping.Update.Internal.UpdateTranslator.Update(IEntityStateManager stateManager, IEntityAdapter adapter)
+   at System.Data.Objects.ObjectContext.SaveChanges(SaveOptions options)
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+Exception Type: System.Data.Entity.Infrastructure.DbUpdateException
+Exception: An error occurred while updating the entries. See the inner exception for details.
+Source: ASP.forms_controlpanel_aspx
+Stack Trace: 
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at SMIZEE.Models.CxHumanResourceForm.CreateForm(Int32 formId, Int32 productionUnitId, Int32 periodNumber, DateTime formDate) in d:\Work\SMIZEE\SMIZEE\SMIZEE.Models\HumanResourceForm.cs:line 92
+   at SMIZEE.Forms.ControlPanel.CreateNewForm(DateTime referenceDate, Int32 formID, Int32 productionUnitId, String periodicityCode, Func`5 createFormMethod, Func`4 checkFormMethod) in d:\Work\SMIZEE\SMIZEE\SMIZEE\Forms\ControlPanel.aspx.cs:line 441
+   at SMIZEE.Forms.ControlPanel.GetHumanResourceFormInQueue(Form currentForm, Int32 productionUnitId) in d:\Work\SMIZEE\SMIZEE\SMIZEE\Forms\ControlPanel.aspx.cs:line 368
+   at SMIZEE.Forms.ControlPanel.GetFormsInQueue(Nullable`1 companyId, Int32 productionUnitId, Nullable`1 functionalAreaId) in d:\Work\SMIZEE\SMIZEE\SMIZEE\Forms\ControlPanel.aspx.cs:line 117
+   at SMIZEE.Forms.ControlPanel.ProcessUserProductionUnitsForms(User user) in d:\Work\SMIZEE\SMIZEE\SMIZEE\Forms\ControlPanel.aspx.cs:line 91
+   at SMIZEE.Forms.ControlPanel.Page_Load(Object sender, EventArgs e) in d:\Work\SMIZEE\SMIZEE\SMIZEE\Forms\ControlPanel.aspx.cs:line 30
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+********** 06/04/2013 16:16:39 **********
+Inner Exception Type: System.Data.UpdateException
+Inner Exception: An error occurred while updating the entries. See the inner exception for details.
+Inner Source: System.Data.Entity
+Inner Stack Trace: 
+   at System.Data.Mapping.Update.Internal.UpdateTranslator.Update(IEntityStateManager stateManager, IEntityAdapter adapter)
+   at System.Data.Objects.ObjectContext.SaveChanges(SaveOptions options)
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+Exception Type: System.Data.Entity.Infrastructure.DbUpdateException
+Exception: An error occurred while updating the entries. See the inner exception for details.
+Source: ASP.forms_controlpanel_aspx
+Stack Trace: 
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at SMIZEE.Models.CxHumanResourceForm.CreateForm(Int32 formId, Int32 productionUnitId, Int32 periodNumber, DateTime formDate) in d:\Work\SMIZEE\SMIZEE\SMIZEE.Models\HumanResourceForm.cs:line 92
+   at SMIZEE.Forms.ControlPanel.CreateNewForm(DateTime referenceDate, Int32 formID, Int32 productionUnitId, String periodicityCode, Func`5 createFormMethod, Func`4 checkFormMethod) in d:\Work\SMIZEE\SMIZEE\SMIZEE\Forms\ControlPanel.aspx.cs:line 441
+   at SMIZEE.Forms.ControlPanel.GetHumanResourceFormInQueue(Form currentForm, Int32 productionUnitId) in d:\Work\SMIZEE\SMIZEE\SMIZEE\Forms\ControlPanel.aspx.cs:line 368
+   at SMIZEE.Forms.ControlPanel.GetFormsInQueue(Nullable`1 companyId, Int32 productionUnitId, Nullable`1 functionalAreaId) in d:\Work\SMIZEE\SMIZEE\SMIZEE\Forms\ControlPanel.aspx.cs:line 117
+   at SMIZEE.Forms.ControlPanel.ProcessUserProductionUnitsForms(User user) in d:\Work\SMIZEE\SMIZEE\SMIZEE\Forms\ControlPanel.aspx.cs:line 91
+   at SMIZEE.Forms.ControlPanel.Page_Load(Object sender, EventArgs e) in d:\Work\SMIZEE\SMIZEE\SMIZEE\Forms\ControlPanel.aspx.cs:line 30
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+********** 06/04/2013 16:17:21 **********
+Inner Exception Type: System.Data.UpdateException
+Inner Exception: An error occurred while updating the entries. See the inner exception for details.
+Inner Source: System.Data.Entity
+Inner Stack Trace: 
+   at System.Data.Mapping.Update.Internal.UpdateTranslator.Update(IEntityStateManager stateManager, IEntityAdapter adapter)
+   at System.Data.Objects.ObjectContext.SaveChanges(SaveOptions options)
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+Exception Type: System.Data.Entity.Infrastructure.DbUpdateException
+Exception: An error occurred while updating the entries. See the inner exception for details.
+Source: ASP.forms_controlpanel_aspx
+Stack Trace: 
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at SMIZEE.Models.CxHumanResourceForm.CreateForm(Int32 formId, Int32 productionUnitId, Int32 periodNumber, DateTime formDate) in d:\Work\SMIZEE\SMIZEE\SMIZEE.Models\HumanResourceForm.cs:line 92
+   at SMIZEE.Forms.ControlPanel.CreateNewForm(DateTime referenceDate, Int32 formID, Int32 productionUnitId, String periodicityCode, Func`5 createFormMethod, Func`4 checkFormMethod) in d:\Work\SMIZEE\SMIZEE\SMIZEE\Forms\ControlPanel.aspx.cs:line 441
+   at SMIZEE.Forms.ControlPanel.GetHumanResourceFormInQueue(Form currentForm, Int32 productionUnitId) in d:\Work\SMIZEE\SMIZEE\SMIZEE\Forms\ControlPanel.aspx.cs:line 368
+   at SMIZEE.Forms.ControlPanel.GetFormsInQueue(Nullable`1 companyId, Int32 productionUnitId, Nullable`1 functionalAreaId) in d:\Work\SMIZEE\SMIZEE\SMIZEE\Forms\ControlPanel.aspx.cs:line 117
+   at SMIZEE.Forms.ControlPanel.ProcessUserProductionUnitsForms(User user) in d:\Work\SMIZEE\SMIZEE\SMIZEE\Forms\ControlPanel.aspx.cs:line 91
+   at SMIZEE.Forms.ControlPanel.Page_Load(Object sender, EventArgs e) in d:\Work\SMIZEE\SMIZEE\SMIZEE\Forms\ControlPanel.aspx.cs:line 30
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+********** 06/04/2013 16:18:08 **********
+Inner Exception Type: System.Data.UpdateException
+Inner Exception: An error occurred while updating the entries. See the inner exception for details.
+Inner Source: System.Data.Entity
+Inner Stack Trace: 
+   at System.Data.Mapping.Update.Internal.UpdateTranslator.Update(IEntityStateManager stateManager, IEntityAdapter adapter)
+   at System.Data.Objects.ObjectContext.SaveChanges(SaveOptions options)
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+Exception Type: System.Data.Entity.Infrastructure.DbUpdateException
+Exception: An error occurred while updating the entries. See the inner exception for details.
+Source: ASP.forms_controlpanel_aspx
+Stack Trace: 
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at SMIZEE.Models.CxHumanResourceQualificationForm.CreateForm(Int32 formId, Int32 productionUnitId, Int32 periodNumber, DateTime formDate) in d:\Work\SMIZEE\SMIZEE\SMIZEE.Models\HumanResourceQualificationForm.cs:line 94
+   at SMIZEE.Forms.ControlPanel.CreateNewForm(DateTime referenceDate, Int32 formID, Int32 productionUnitId, String periodicityCode, Func`5 createFormMethod, Func`4 checkFormMethod) in d:\Work\SMIZEE\SMIZEE\SMIZEE\Forms\ControlPanel.aspx.cs:line 441
+   at SMIZEE.Forms.ControlPanel.GetHumanResourceQualificationFormInQueue(Form currentForm, Int32 productionUnitId) in d:\Work\SMIZEE\SMIZEE\SMIZEE\Forms\ControlPanel.aspx.cs:line 375
+   at SMIZEE.Forms.ControlPanel.GetFormsInQueue(Nullable`1 companyId, Int32 productionUnitId, Nullable`1 functionalAreaId) in d:\Work\SMIZEE\SMIZEE\SMIZEE\Forms\ControlPanel.aspx.cs:line 119
+   at SMIZEE.Forms.ControlPanel.ProcessUserProductionUnitsForms(User user) in d:\Work\SMIZEE\SMIZEE\SMIZEE\Forms\ControlPanel.aspx.cs:line 91
+   at SMIZEE.Forms.ControlPanel.Page_Load(Object sender, EventArgs e) in d:\Work\SMIZEE\SMIZEE\SMIZEE\Forms\ControlPanel.aspx.cs:line 30
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+********** 09/04/2013 11:37:00 **********
+Exception Type: System.NullReferenceException
+Exception: Object reference not set to an instance of an object.
+Source: ASP.default_aspx
+Stack Trace: 
+   at SMIZEE.SiteMaster.ShowUserContext() in d:\Work\SMIZEE\SMIZEE\SMIZEE\Site.Master.cs:line 114
+   at SMIZEE.SiteMaster.Page_Load(Object sender, EventArgs e) in d:\Work\SMIZEE\SMIZEE\SMIZEE\Site.Master.cs:line 93
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+********** 09/04/2013 11:37:30 **********
+Exception Type: System.NullReferenceException
+Exception: Object reference not set to an instance of an object.
+Source: ASP.default_aspx
+Stack Trace: 
+   at SMIZEE.SiteMaster.ShowUserContext() in d:\Work\SMIZEE\SMIZEE\SMIZEE\Site.Master.cs:line 114
+   at SMIZEE.SiteMaster.Page_Load(Object sender, EventArgs e) in d:\Work\SMIZEE\SMIZEE\SMIZEE\Site.Master.cs:line 93
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+********** 09/04/2013 11:37:38 **********
+Exception Type: System.NullReferenceException
+Exception: Object reference not set to an instance of an object.
+Source: ASP.default_aspx
+Stack Trace: 
+   at SMIZEE.SiteMaster.ShowUserContext() in d:\Work\SMIZEE\SMIZEE\SMIZEE\Site.Master.cs:line 114
+   at SMIZEE.SiteMaster.Page_Load(Object sender, EventArgs e) in d:\Work\SMIZEE\SMIZEE\SMIZEE\Site.Master.cs:line 93
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+********** 09/04/2013 11:38:12 **********
+Exception Type: System.NullReferenceException
+Exception: Object reference not set to an instance of an object.
+Source: ASP.default_aspx
+Stack Trace: 
+   at SMIZEE.SiteMaster.ShowUserContext() in d:\Work\SMIZEE\SMIZEE\SMIZEE\Site.Master.cs:line 114
+   at SMIZEE.SiteMaster.Page_Load(Object sender, EventArgs e) in d:\Work\SMIZEE\SMIZEE\SMIZEE\Site.Master.cs:line 93
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+********** 15/04/2013 16:11:43 **********
+Exception Type: System.NotSupportedException
+Exception: Consider using methods from WebSecurity module.
+Source: ASP.management_smi_04_01_aspx
+Stack Trace: 
+   at SMIZEE.CodeFirstMembership.CodeFirstMembershipProvider.ResetPassword(String username, String answer) in d:\Work\SMIZEE\SMIZEE\SMIZEE\Membership\CodeFirstMembershipProvider.cs:line 521
+   at System.Web.Security.MembershipUser.ResetPassword(String passwordAnswer)
+   at SMIZEE.CodeFirstMembership.WebSecurity.ResetPassword(String userName) in d:\Work\SMIZEE\SMIZEE\SMIZEE\Membership\WebSecurity.cs:line 124
+   at SMIZEE.Management.SMI_04_01.OnResetPwd(Object sender, EventArgs e) in d:\Work\SMIZEE\SMIZEE\SMIZEE\Management\SMI.04.01.aspx.cs:line 75
+   at System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+********** 15/04/2013 16:16:56 **********
+Exception Type: System.NotSupportedException
+Exception: Consider using methods from WebSecurity module.
+Source: ASP.management_smi_04_01_aspx
+Stack Trace: 
+   at SMIZEE.CodeFirstMembership.CodeFirstMembershipProvider.ResetPassword(String username, String answer) in d:\Work\SMIZEE\SMIZEE\SMIZEE\Membership\CodeFirstMembershipProvider.cs:line 521
+   at System.Web.Security.MembershipUser.ResetPassword(String passwordAnswer)
+   at SMIZEE.Management.SMI_04_01.OnResetPwd(Object sender, EventArgs e) in d:\Work\SMIZEE\SMIZEE\SMIZEE\Management\SMI.04.01.aspx.cs:line 76
+   at System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+********** 15/04/2013 16:17:05 **********
+Exception Type: System.NotSupportedException
+Exception: Consider using methods from WebSecurity module.
+Source: ASP.management_smi_04_01_aspx
+Stack Trace: 
+   at SMIZEE.CodeFirstMembership.CodeFirstMembershipProvider.ResetPassword(String username, String answer) in d:\Work\SMIZEE\SMIZEE\SMIZEE\Membership\CodeFirstMembershipProvider.cs:line 521
+   at System.Web.Security.MembershipUser.ResetPassword(String passwordAnswer)
+   at SMIZEE.Management.SMI_04_01.OnResetPwd(Object sender, EventArgs e) in d:\Work\SMIZEE\SMIZEE\SMIZEE\Management\SMI.04.01.aspx.cs:line 76
+   at System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+********** 15/04/2013 16:17:13 **********
+Exception Type: System.NotSupportedException
+Exception: Consider using methods from WebSecurity module.
+Source: ASP.management_smi_04_01_aspx
+Stack Trace: 
+   at SMIZEE.CodeFirstMembership.CodeFirstMembershipProvider.ResetPassword(String username, String answer) in d:\Work\SMIZEE\SMIZEE\SMIZEE\Membership\CodeFirstMembershipProvider.cs:line 521
+   at System.Web.Security.MembershipUser.ResetPassword(String passwordAnswer)
+   at SMIZEE.Management.SMI_04_01.OnResetPwd(Object sender, EventArgs e) in d:\Work\SMIZEE\SMIZEE\SMIZEE\Management\SMI.04.01.aspx.cs:line 76
+   at System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+********** 15/04/2013 16:17:26 **********
+Exception Type: System.NotSupportedException
+Exception: Consider using methods from WebSecurity module.
+Source: ASP.management_smi_04_01_aspx
+Stack Trace: 
+   at SMIZEE.CodeFirstMembership.CodeFirstMembershipProvider.ResetPassword(String username, String answer) in d:\Work\SMIZEE\SMIZEE\SMIZEE\Membership\CodeFirstMembershipProvider.cs:line 521
+   at System.Web.Security.MembershipUser.ResetPassword(String passwordAnswer)
+   at SMIZEE.Management.SMI_04_01.OnResetPwd(Object sender, EventArgs e) in d:\Work\SMIZEE\SMIZEE\SMIZEE\Management\SMI.04.01.aspx.cs:line 76
+   at System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+********** 15/04/2013 16:18:30 **********
+Exception Type: System.NotSupportedException
+Exception: Consider using methods from WebSecurity module.
+Source: ASP.management_smi_04_01_aspx
+Stack Trace: 
+   at SMIZEE.CodeFirstMembership.CodeFirstMembershipProvider.ResetPassword(String username, String answer) in d:\Work\SMIZEE\SMIZEE\SMIZEE\Membership\CodeFirstMembershipProvider.cs:line 521
+   at System.Web.Security.MembershipUser.ResetPassword(String passwordAnswer)
+   at SMIZEE.Management.SMI_04_01.OnResetPwd(Object sender, EventArgs e) in d:\Work\SMIZEE\SMIZEE\SMIZEE\Management\SMI.04.01.aspx.cs:line 76
+   at System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+********** 16/04/2013 10:06:10 **********
+Exception Type: System.FormatException
+Exception: Input string was not in a correct format.
+Source: ASP.account_smi_02_04_aspx
+Stack Trace: 
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at SMIZEE.BasePage.GetIntValueFromInput(String amount) in d:\Work\SMIZEE\SMIZEE\SMIZEE\Classes\BasePage.cs:line 247
+   at SMIZEE.Account.SMI_02_04.OnConfirm(Object sender, EventArgs e) in d:\Work\SMIZEE\SMIZEE\SMIZEE\Account\SMI.02.04.aspx.cs:line 136
+   at System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+********** 16/04/2013 10:06:12 **********
+Exception Type: System.FormatException
+Exception: Input string was not in a correct format.
+Source: ASP.account_smi_02_04_aspx
+Stack Trace: 
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at SMIZEE.BasePage.GetIntValueFromInput(String amount) in d:\Work\SMIZEE\SMIZEE\SMIZEE\Classes\BasePage.cs:line 247
+   at SMIZEE.Account.SMI_02_04.OnConfirm(Object sender, EventArgs e) in d:\Work\SMIZEE\SMIZEE\SMIZEE\Account\SMI.02.04.aspx.cs:line 136
+   at System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+********** 16/04/2013 10:06:18 **********
+Exception Type: System.FormatException
+Exception: Input string was not in a correct format.
+Source: ASP.account_smi_02_04_aspx
+Stack Trace: 
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at SMIZEE.BasePage.GetIntValueFromInput(String amount) in d:\Work\SMIZEE\SMIZEE\SMIZEE\Classes\BasePage.cs:line 247
+   at SMIZEE.Account.SMI_02_04.OnConfirm(Object sender, EventArgs e) in d:\Work\SMIZEE\SMIZEE\SMIZEE\Account\SMI.02.04.aspx.cs:line 136
+   at System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+********** 16/04/2013 10:06:57 **********
+Exception Type: System.FormatException
+Exception: Input string was not in a correct format.
+Source: ASP.account_smi_02_04_aspx
+Stack Trace: 
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at SMIZEE.BasePage.GetIntValueFromInput(String amount) in d:\Work\SMIZEE\SMIZEE\SMIZEE\Classes\BasePage.cs:line 247
+   at SMIZEE.Account.SMI_02_04.OnConfirm(Object sender, EventArgs e) in d:\Work\SMIZEE\SMIZEE\SMIZEE\Account\SMI.02.04.aspx.cs:line 136
+   at System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+********** 17/04/2013 14:46:14 **********
+Exception Type: System.InvalidOperationException
+Exception: The model backing the 'SmizeeContext' context has changed since the database was created. Consider using Code First Migrations to update the database (http://go.microsoft.com/fwlink/?LinkId=238269).
+Source: ASP.default_aspx
+Stack Trace: 
+   at System.Data.Entity.CreateDatabaseIfNotExists`1.InitializeDatabase(TContext context)
+   at System.Data.Entity.Internal.InternalContext.PerformInitializationAction(Action action)
+   at System.Data.Entity.Internal.InternalContext.PerformDatabaseInitialization()
+   at System.Data.Entity.Internal.RetryAction`1.PerformAction(TInput input)
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeDatabaseAction(Action`1 action)
+   at System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   at System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   at System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Provider()
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   at SMIZEE.CodeFirstMembership.WebSecurity.GetUserInfo(String userName) in d:\Work\SMIZEE\SMIZEE\SMIZEE\Membership\WebSecurity.cs:line 262
+   at SMIZEE.SiteMaster.ShowUserContext() in d:\Work\SMIZEE\SMIZEE\SMIZEE\Site.Master.cs:line 113
+   at SMIZEE.SiteMaster.Page_Load(Object sender, EventArgs e) in d:\Work\SMIZEE\SMIZEE\SMIZEE\Site.Master.cs:line 94
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+********** 17/04/2013 14:47:16 **********
+Inner Exception Type: System.Data.UpdateException
+Inner Exception: An error occurred while updating the entries. See the inner exception for details.
+Inner Source: System.Data.Entity
+Inner Stack Trace: 
+   at System.Data.Mapping.Update.Internal.UpdateTranslator.Update(IEntityStateManager stateManager, IEntityAdapter adapter)
+   at System.Data.Objects.ObjectContext.SaveChanges(SaveOptions options)
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+Exception Type: System.Data.Entity.Infrastructure.DbUpdateException
+Exception: An error occurred while updating the entries. See the inner exception for details.
+Source: ASP.forms_controlpanel_aspx
+Stack Trace: 
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at SMIZEE.Models.AuditAction.Create(String userName, String applicationPage, Int32 operationId, String result) in d:\Work\SMIZEE\SMIZEE\SMIZEE.Models\Audit.cs:line 25
+   at SMIZEE.Forms.ControlPanel.Page_Load(Object sender, EventArgs e) in d:\Work\SMIZEE\SMIZEE\SMIZEE\Forms\ControlPanel.aspx.cs:line 42
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+********** 17/04/2013 18:30:54 **********
+Exception Type: System.Web.HttpException
+Exception: Membership provider does not support password retrieval or reset.
+Source: ASP.account_login_aspx
+Stack Trace: 
+   at System.Web.UI.WebControls.PasswordRecovery.AttemptSendPasswordUserNameView()
+   at System.Web.UI.WebControls.PasswordRecovery.OnBubbleEvent(Object source, EventArgs e)
+   at System.Web.UI.Control.RaiseBubbleEvent(Object source, EventArgs args)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+********** 17/04/2013 18:32:39 **********
+Exception Type: System.NotSupportedException
+Exception: Consider using methods from WebSecurity module.
+Source: ASP.account_login_aspx
+Stack Trace: 
+   at SMIZEE.CodeFirstMembership.CodeFirstMembershipProvider.GetPassword(String username, String answer) in d:\Work\SMIZEE\SMIZEE\SMIZEE\Membership\CodeFirstMembershipProvider.cs:line 511
+   at System.Web.Security.MembershipUser.GetPassword(String answer, Boolean useAnswer, Boolean throwOnError)
+   at System.Web.UI.WebControls.PasswordRecovery.AttemptSendPasswordUserNameView()
+   at System.Web.UI.WebControls.PasswordRecovery.OnBubbleEvent(Object source, EventArgs e)
+   at System.Web.UI.Control.RaiseBubbleEvent(Object source, EventArgs args)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+********** 17/04/2013 18:35:31 **********
+Exception Type: System.NotSupportedException
+Exception: Consider using methods from WebSecurity module.
+Source: ASP.account_login_aspx
+Stack Trace: 
+   at SMIZEE.CodeFirstMembership.CodeFirstMembershipProvider.GetPassword(String username, String answer) in d:\Work\SMIZEE\SMIZEE\SMIZEE\Membership\CodeFirstMembershipProvider.cs:line 511
+   at System.Web.Security.MembershipUser.GetPassword(String answer, Boolean useAnswer, Boolean throwOnError)
+   at System.Web.UI.WebControls.PasswordRecovery.AttemptSendPasswordUserNameView()
+   at System.Web.UI.WebControls.PasswordRecovery.OnBubbleEvent(Object source, EventArgs e)
+   at System.Web.UI.Control.RaiseBubbleEvent(Object source, EventArgs args)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+********** 17/04/2013 18:36:54 **********
+Exception Type: System.Web.HttpException
+Exception: A from e-mail address must be specified in the From property or the system.net/mailSettings/smtp config section.
+Source: ASP.account_login_aspx
+Stack Trace: 
+   at System.Web.UI.WebControls.MailDefinition.CreateMailMessage(String recipients, IDictionary replacements, String body, Control owner)
+   at System.Web.UI.WebControls.LoginUtil.SendPasswordMail(String email, String userName, String password, MailDefinition mailDefinition, String defaultSubject, String defaultBody, OnSendingMailDelegate onSendingMailDelegate, OnSendMailErrorDelegate onSendMailErrorDelegate, Control owner)
+   at System.Web.UI.WebControls.PasswordRecovery.AttemptSendPasswordUserNameView()
+   at System.Web.UI.WebControls.PasswordRecovery.OnBubbleEvent(Object source, EventArgs e)
+   at System.Web.UI.Control.RaiseBubbleEvent(Object source, EventArgs args)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+********** 17/04/2013 18:40:24 **********
+Exception Type: System.Web.HttpException
+Exception: A from e-mail address must be specified in the From property or the system.net/mailSettings/smtp config section.
+Source: ASP.account_login_aspx
+Stack Trace: 
+   at System.Web.UI.WebControls.MailDefinition.CreateMailMessage(String recipients, IDictionary replacements, String body, Control owner)
+   at System.Web.UI.WebControls.LoginUtil.SendPasswordMail(String email, String userName, String password, MailDefinition mailDefinition, String defaultSubject, String defaultBody, OnSendingMailDelegate onSendingMailDelegate, OnSendMailErrorDelegate onSendMailErrorDelegate, Control owner)
+   at System.Web.UI.WebControls.PasswordRecovery.AttemptSendPasswordUserNameView()
+   at System.Web.UI.WebControls.PasswordRecovery.OnBubbleEvent(Object source, EventArgs e)
+   at System.Web.UI.Control.RaiseBubbleEvent(Object source, EventArgs args)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+********** 17/04/2013 18:51:55 **********
+Exception Type: System.Net.Mail.SmtpException
+Exception: The SMTP server requires a secure connection or the client was not authenticated. The server response was: 5.7.0 Must issue a STARTTLS command first. s47sm10537242eeg.8 - gsmtp
+Source: ASP.account_login_aspx
+Stack Trace: 
+   at System.Net.Mail.MailCommand.CheckResponse(SmtpStatusCode statusCode, String response)
+   at System.Net.Mail.SmtpTransport.SendMail(MailAddress sender, MailAddressCollection recipients, String deliveryNotify, Boolean allowUnicode, SmtpFailedRecipientException& exception)
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at System.Web.UI.WebControls.LoginUtil.SendPasswordMail(String email, String userName, String password, MailDefinition mailDefinition, String defaultSubject, String defaultBody, OnSendingMailDelegate onSendingMailDelegate, OnSendMailErrorDelegate onSendMailErrorDelegate, Control owner)
+   at System.Web.UI.WebControls.PasswordRecovery.AttemptSendPasswordUserNameView()
+   at System.Web.UI.WebControls.PasswordRecovery.OnBubbleEvent(Object source, EventArgs e)
+   at System.Web.UI.Control.RaiseBubbleEvent(Object source, EventArgs args)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+********** 17/04/2013 18:53:38 **********
+Exception Type: System.Net.Mail.SmtpFailedRecipientException
+Exception: Mailbox unavailable. The server response was: 5.7.1 <antonio.pedro@softfinanca.com> Access to <apedro.silva@gmail.com> not allowed
+Source: ASP.account_login_aspx
+Stack Trace: 
+   at System.Net.Mail.SmtpTransport.SendMail(MailAddress sender, MailAddressCollection recipients, String deliveryNotify, Boolean allowUnicode, SmtpFailedRecipientException& exception)
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at System.Web.UI.WebControls.LoginUtil.SendPasswordMail(String email, String userName, String password, MailDefinition mailDefinition, String defaultSubject, String defaultBody, OnSendingMailDelegate onSendingMailDelegate, OnSendMailErrorDelegate onSendMailErrorDelegate, Control owner)
+   at System.Web.UI.WebControls.PasswordRecovery.AttemptSendPasswordUserNameView()
+   at System.Web.UI.WebControls.PasswordRecovery.OnBubbleEvent(Object source, EventArgs e)
+   at System.Web.UI.Control.RaiseBubbleEvent(Object source, EventArgs args)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+********** 22/04/2013 14:54:21 **********
+Exception Type: System.IndexOutOfRangeException
+Exception: Index was outside the bounds of the array.
+Source: ASP.forms_controlpanel_aspx
+Stack Trace: 
+   at SMIZEE.UserControls.AplMenu.Page_Load(Object sender, EventArgs e) in d:\Work\SMIZEE\SMIZEE\SMIZEE\UserControls\AplMenu.ascx.cs:line 17
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+********** 24/04/2013 12:16:57 **********
+Exception Type: System.InvalidOperationException
+Exception: The model backing the 'SmizeeContext' context has changed since the database was created. Consider using Code First Migrations to update the database (http://go.microsoft.com/fwlink/?LinkId=238269).
+Source: ASP.forms_smi_03_03_aspx
+Stack Trace: 
+   at System.Data.Entity.CreateDatabaseIfNotExists`1.InitializeDatabase(TContext context)
+   at System.Data.Entity.Internal.InternalContext.PerformInitializationAction(Action action)
+   at System.Data.Entity.Internal.InternalContext.PerformDatabaseInitialization()
+   at System.Data.Entity.Internal.RetryAction`1.PerformAction(TInput input)
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeDatabaseAction(Action`1 action)
+   at System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   at System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   at System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Provider()
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   at SMIZEE.CodeFirstMembership.WebSecurity.GetUserInfo(String userName) in d:\Work\SMIZEE\SMIZEE\SMIZEE\Membership\WebSecurity.cs:line 270
+   at SMIZEE.Forms.SMI_03_03.Page_Load(Object sender, EventArgs e) in d:\Work\SMIZEE\SMIZEE\SMIZEE\Forms\SMI.03.03.aspx.cs:line 56
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+********** 17/06/2013 14:55:02 **********
+Exception Type: System.InvalidOperationException
+Exception: Validation of Anti-XSRF token failed.
+Source: ASP.account_login_aspx
+Stack Trace: 
+   at SMIZEE.SiteMaster.master_Page_PreLoad(Object sender, EventArgs e) in d:\Work\SMIZEE\SMIZEE\SMIZEE\Site.Master.cs:line 68
+   at System.EventHandler.Invoke(Object sender, EventArgs e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+********** 17/06/2013 14:55:10 **********
+Exception Type: System.InvalidOperationException
+Exception: Validation of Anti-XSRF token failed.
+Source: ASP.account_login_aspx
+Stack Trace: 
+   at SMIZEE.SiteMaster.master_Page_PreLoad(Object sender, EventArgs e) in d:\Work\SMIZEE\SMIZEE\SMIZEE\Site.Master.cs:line 68
+   at System.EventHandler.Invoke(Object sender, EventArgs e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+********** 18/06/2013 11:36:19 **********
+Exception Type: System.NullReferenceException
+Exception: Object reference not set to an instance of an object.
+Source: ASP.forms_smi_03_06_aspx
+Stack Trace: 
+   at SMIZEE.Forms.SMI_03_06.Page_Load(Object sender, EventArgs e) in d:\Work\SMIZEE\SMIZEE\SMIZEE\Forms\SMI.03.06.aspx.cs:line 56
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+********** 18/06/2013 11:36:33 **********
+Exception Type: System.NullReferenceException
+Exception: Object reference not set to an instance of an object.
+Source: ASP.default_aspx
+Stack Trace: 
+   at SMIZEE.SiteMaster.ShowUserContext() in d:\Work\SMIZEE\SMIZEE\SMIZEE\Site.Master.cs:line 116
+   at SMIZEE.SiteMaster.Page_Load(Object sender, EventArgs e) in d:\Work\SMIZEE\SMIZEE\SMIZEE\Site.Master.cs:line 94
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+********** 18/06/2013 11:36:57 **********
+Exception Type: System.NullReferenceException
+Exception: Object reference not set to an instance of an object.
+Source: ASP.default_aspx
+Stack Trace: 
+   at SMIZEE.SiteMaster.ShowUserContext() in d:\Work\SMIZEE\SMIZEE\SMIZEE\Site.Master.cs:line 116
+   at SMIZEE.SiteMaster.Page_Load(Object sender, EventArgs e) in d:\Work\SMIZEE\SMIZEE\SMIZEE\Site.Master.cs:line 94
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+********** 18/06/2013 11:37:26 **********
+Exception Type: System.NullReferenceException
+Exception: Object reference not set to an instance of an object.
+Source: ASP.default_aspx
+Stack Trace: 
+   at SMIZEE.SiteMaster.ShowUserContext() in d:\Work\SMIZEE\SMIZEE\SMIZEE\Site.Master.cs:line 116
+   at SMIZEE.SiteMaster.Page_Load(Object sender, EventArgs e) in d:\Work\SMIZEE\SMIZEE\SMIZEE\Site.Master.cs:line 94
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+********** 18/06/2013 11:39:10 **********
+Exception Type: System.NullReferenceException
+Exception: Object reference not set to an instance of an object.
+Source: ASP.default_aspx
+Stack Trace: 
+   at SMIZEE.UserControls.AplMenu.addFormsMenu(User user, MenuItem formsMenuItem) in d:\Work\SMIZEE\SMIZEE\SMIZEE\UserControls\AplMenu.ascx.cs:line 96
+   at SMIZEE.UserControls.AplMenu.SetUserMenu(User user) in d:\Work\SMIZEE\SMIZEE\SMIZEE\UserControls\AplMenu.ascx.cs:line 44
+   at SMIZEE.UserControls.AplMenu.Page_Load(Object sender, EventArgs e) in d:\Work\SMIZEE\SMIZEE\SMIZEE\UserControls\AplMenu.ascx.cs:line 31
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+********** 18/06/2013 11:39:39 **********
+Exception Type: System.NullReferenceException
+Exception: Object reference not set to an instance of an object.
+Source: ASP.default_aspx
+Stack Trace: 
+   at SMIZEE.SiteMaster.ShowUserContext() in d:\Work\SMIZEE\SMIZEE\SMIZEE\Site.Master.cs:line 116
+   at SMIZEE.SiteMaster.Page_Load(Object sender, EventArgs e) in d:\Work\SMIZEE\SMIZEE\SMIZEE\Site.Master.cs:line 94
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+********** 19/06/2013 17:31:56 **********
+Exception Type: System.NullReferenceException
+Exception: Object reference not set to an instance of an object.
+Source: ASP.default_aspx
+Stack Trace: 
+   at SMIZEE.SiteMaster.ShowUserContext() in d:\Work\SMIZEE\SMIZEE\SMIZEE\Site.Master.cs:line 116
+   at SMIZEE.SiteMaster.Page_Load(Object sender, EventArgs e) in d:\Work\SMIZEE\SMIZEE\SMIZEE\Site.Master.cs:line 94
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+********** 26/06/2013 10:26:44 **********
+Exception Type: System.NullReferenceException
+Exception: Object reference not set to an instance of an object.
+Source: ASP.default_aspx
+Stack Trace: 
+   at SMIZEE.SiteMaster.Page_Load(Object sender, EventArgs e) in d:\Work\SMIZEE\SMIZEE\SMIZEE\Site.Master.cs:line 94
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+********** 28/06/2013 09:23:56 **********
+Exception Type: System.Web.HttpException
+Exception: Unable to find control id 'UserName' referenced by the 'ControlToValidate' property of 'RequiredFieldValidator1'.
+Source: ASP.default_aspx
+Stack Trace: 
+   at System.Web.UI.WebControls.BaseValidator.CheckControlValidationProperty(String name, String propertyName)
+   at System.Web.UI.WebControls.BaseValidator.ControlPropertiesValid()
+   at System.Web.UI.WebControls.BaseValidator.OnPreRender(EventArgs e)
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+

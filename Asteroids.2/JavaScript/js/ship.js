@@ -24,15 +24,11 @@ var Ship = WinJS.Class.define(
             return 0;
         },
         getPosition: function () {
-            var fv = Ship.getAngleVector(this.angle)
-            return [this.x + this.imageCenter[0] - 10, (this.y + this.imageCenter[1] - 3)];
+            return [this.x, this.y];
         },
         getCenter: function () {
-            if (this.image.width > 0) {
-                var fv = Ship.getAngleVector(this.angle)
-                return [this.x + this.imageCenter[0] + (1 * fv[0]), (this.y + this.imageCenter[1] - 3) + (1 * fv[1])];
-            }
-            return 0;
+            var fv = Ship.getAngleVector(this.angle)
+            return [this.x + this.imageCenter[0], this.y + this.imageCenter[1]];
         },
         draw: function () {
             Ship.drawImage(this.ctx, this.image, this.x, this.y, this.angle, this.thrust);
@@ -59,25 +55,24 @@ var Ship = WinJS.Class.define(
 
             // get forward vector
             this.angle += this.angle_vel;
-            var forwardVector = Ship.getAngleVector(this.angle)
+            var fv = Ship.getAngleVector(this.angle)
 
             // update acceleration on forward vector
             if (this.thrust) {
-                this.velocity[0] += 0.1 * forwardVector[0];
-                this.velocity[1] += 0.1 * forwardVector[1];
+                this.velocity[0] += 0.1 * fv[0];
+                this.velocity[1] += 0.1 * fv[1];
             }
 
             // update friction
             this.velocity[0] *= (1 - 0.01);
             this.velocity[1] *= (1 - 0.01);
-            
         },
         rotate: function (vel) {
             this.angle_vel = vel;
         },
         getCanonTipPos: function (fv) {
-            return [this.x + this.imageCenter[0] + (1 * fv[0]), (this.y + this.imageCenter[1] - 3) + (1 * fv[1])];
-            //return [this.x + this.imageCenter[0] - 10 + (this.imageSize[0] / 2 * fv[0]), (this.y + this.imageCenter[1] - 3) + ((this.imageSize[1] - 3) / 2 * fv[1])];
+            var imageCenter = this.getCenter();
+            return [imageCenter[0], imageCenter[1]];
         },
         getMissileVelocity: function (fv) {
             return [this.velocity[0] + 6 * fv[0], this.velocity[1] + 6 * fv[1]];
@@ -90,7 +85,7 @@ var Ship = WinJS.Class.define(
             var missilePosition = this.getCanonTipPos(fv);
             var missileVelocity = this.getMissileVelocity(fv);
 
-            return new Asteroids.Missile(this.ctx, missilePosition[0], missilePosition[1], missileVelocity);
+            return new Asteroids.Missile(this.ctx, missilePosition, missileVelocity);
         },
         accelerate: function (thrust) {
             this.thrust = thrust;

@@ -405,6 +405,18 @@ var Game = WinJS.Class.define(
         this.gameContext.textAlign = "left";
         this.gameContext.fillText("Missiles:" + this.state.missiles, 5, 100);
 
+        //// Draw the ship position
+        //this.gameContext.fillStyle = "#FF8040";
+        //this.gameContext.textAlign = "left";
+        //var shipPosition = this.ship.getPosition();
+        //this.gameContext.fillText("Ship Position:[" + Math.floor(shipPosition[0]) + "," + Math.floor(shipPosition[1]) + "]", 5, 130);
+
+        //// Draw the ship center
+        //this.gameContext.fillStyle = "#FF8040";
+        //this.gameContext.textAlign = "left";
+        //var shipCenter = this.ship.getCenter();
+        //this.gameContext.fillText("Ship Center:[" + Math.floor(shipCenter[0]) + "," + Math.floor(shipCenter[1]) + "]", 5, 160);
+
     },
     drawBackground: function () {
         this.gameContext.clearRect(0, 0, gameCanvas.width, gameCanvas.height);

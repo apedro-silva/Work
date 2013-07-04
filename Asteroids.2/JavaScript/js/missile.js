@@ -1,11 +1,11 @@
 ﻿//// Copyright (c) António Pedro Silva. All rights reserved
 
 var Missile = WinJS.Class.define(
-    function (ctx, x, y, velocity) {
+    function (ctx, position, velocity) {
         this.image = new Image();
         this.velocity = velocity;
-        this.x = x;
-        this.y = y;
+        this.x = position[0];
+        this.y = position[1];
         this.angle = 0;
         this.angle_vel = 0;
         this.ctx = ctx;

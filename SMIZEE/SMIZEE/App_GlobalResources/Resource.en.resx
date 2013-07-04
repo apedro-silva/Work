@@ -1,0 +1,327 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="btnBack" xml:space="preserve">
+    <value>Back</value>
+  </data>
+  <data name="btnCancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="btnConfirm" xml:space="preserve">
+    <value>Confirm</value>
+  </data>
+  <data name="btnOK" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="lAccountInformation" xml:space="preserve">
+    <value>Account Information</value>
+  </data>
+  <data name="lDetail" xml:space="preserve">
+    <value>Detail</value>
+  </data>
+  <data name="lHome" xml:space="preserve">
+    <value>Start</value>
+  </data>
+  <data name="lInformation" xml:space="preserve">
+    <value>Information</value>
+  </data>
+  <data name="lKeepMeLoggedIn" xml:space="preserve">
+    <value>Keep me logged in</value>
+  </data>
+  <data name="lLangEN" xml:space="preserve">
+    <value>English</value>
+  </data>
+  <data name="lLangPT" xml:space="preserve">
+    <value>Portuguese</value>
+  </data>
+  <data name="lLanguageMenu" xml:space="preserve">
+    <value>Language</value>
+  </data>
+  <data name="lLoginMessage" xml:space="preserve">
+    <value>Please enter your username and password.</value>
+  </data>
+  <data name="lNoAccountMessage" xml:space="preserve">
+    <value>if you don't have an account.</value>
+  </data>
+  <data name="lOptions" xml:space="preserve">
+    <value>Options</value>
+  </data>
+  <data name="lPassword" xml:space="preserve">
+    <value>Password:</value>
+  </data>
+  <data name="lPlaceCode" xml:space="preserve">
+    <value>Code</value>
+  </data>
+  <data name="lPlaceDescription" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="lPropertySpeciesCode" xml:space="preserve">
+    <value>Code</value>
+  </data>
+  <data name="lPropertySpeciesDescription" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="lPublicPrivateDomainCode" xml:space="preserve">
+    <value>Code</value>
+  </data>
+  <data name="lPublicPrivateDomainDescription" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="lRegister" xml:space="preserve">
+    <value>Register</value>
+  </data>
+  <data name="lSearch" xml:space="preserve">
+    <value>Query</value>
+  </data>
+  <data name="lSearchResults" xml:space="preserve">
+    <value>Query Results</value>
+  </data>
+  <data name="lSelect" xml:space="preserve">
+    <value>Select</value>
+  </data>
+  <data name="lUsername" xml:space="preserve">
+    <value>Username:</value>
+  </data>
+  <data name="mAbout" xml:space="preserve">
+    <value>About</value>
+  </data>
+  <data name="mDefault" xml:space="preserve">
+    <value>Assets</value>
+  </data>
+  <data name="mHome" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="mSearchResult" xml:space="preserve">
+    <value>Records Count :</value>
+  </data>
+  <data name="mForms" xml:space="preserve">
+    <value>Forms</value>
+  </data>
+  <data name="mWelcome" xml:space="preserve">
+    <value>Welcome</value>
+  </data>
+  <data name="oCreate" xml:space="preserve">
+    <value>Create</value>
+  </data>
+  <data name="oDelete" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="oExecute" xml:space="preserve">
+    <value>Execute</value>
+  </data>
+  <data name="oImport" xml:space="preserve">
+    <value>Import</value>
+  </data>
+  <data name="oQuery" xml:space="preserve">
+    <value>Query</value>
+  </data>
+  <data name="oUpdate" xml:space="preserve">
+    <value>Update</value>
+  </data>
+  <data name="oAll" xml:space="preserve">
+    <value>[Select]</value>
+  </data>
+  <data name="btnExport" xml:space="preserve">
+    <value>Export</value>
+  </data>
+  <data name="btnUnSelectAll" xml:space="preserve">
+    <value>Inverter Selecção</value>
+  </data>
+  <data name="btnCreateUser" xml:space="preserve">
+    <value>Create User</value>
+  </data>
+  <data name="lEmail" xml:space="preserve">
+    <value>Email :</value>
+  </data>
+  <data name="lPasswordConfirm" xml:space="preserve">
+    <value>Confirm Password:</value>
+  </data>
+  <data name="lPasswordFormat" xml:space="preserve">
+    <value>Passwords are required to be a minimum of</value>
+  </data>
+  <data name="lPasswordFormat1" xml:space="preserve">
+    <value>characters in length.</value>
+  </data>
+  <data name="lUseFormBelow" xml:space="preserve">
+    <value>Use the form below to create a new account.</value>
+  </data>
+  <data name="mPasswordIsRequired" xml:space="preserve">
+    <value>Password is required.</value>
+  </data>
+  <data name="mUserNameIsRequired" xml:space="preserve">
+    <value>User Name is required.</value>
+  </data>
+  <data name="lAbout" xml:space="preserve">
+    <value>About</value>
+  </data>
+  <data name="lRememberAuthentication" xml:space="preserve">
+    <value>Remember me?</value>
+  </data>
+  <data name="bLoginConfirm" xml:space="preserve">
+    <value>Confirm</value>
+  </data>
+  <data name="bRegister" xml:space="preserve">
+    <value>Confirm</value>
+  </data>
+  <data name="lPasswordCriteria" xml:space="preserve">
+    <value>Passwords are required to be a minimum of</value>
+  </data>
+  <data name="lPasswordCriteriaEnd" xml:space="preserve">
+    <value>characters in length.</value>
+  </data>
+  <data name="lPasswordRequired" xml:space="preserve">
+    <value>The password field is required.</value>
+  </data>
+  <data name="lRegisterOption" xml:space="preserve">
+    <value>Register</value>
+  </data>
+  <data name="lUserNameRequired" xml:space="preserve">
+    <value>The user name field is required.</value>
+  </data>
+  <data name="mPasswordsDoNotMatch" xml:space="preserve">
+    <value>The Password and Confirmation Password must match.</value>
+  </data>
+  <data name="lBackOffice" xml:space="preserve">
+    <value>BackOffice</value>
+  </data>
+  <data name="lDescription" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="lID" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="mCreateOK" xml:space="preserve">
+    <value>Record created with sucess!</value>
+  </data>
+  <data name="lForms" xml:space="preserve">
+    <value>Formulários</value>
+  </data>
+  <data name="lSmallDescription" xml:space="preserve">
+    <value>Desc.Abreviada</value>
+  </data>
+  <data name="lISOCode" xml:space="preserve">
+    <value>ISO Code</value>
+  </data>
+  <data name="lAuthenticationMessage" xml:space="preserve">
+    <value>LOGIN</value>
+  </data>
+  <data name="lLoginFailureText" xml:space="preserve">
+    <value>Your login attempt was not successful. Please try again.</value>
+  </data>
+</root>
