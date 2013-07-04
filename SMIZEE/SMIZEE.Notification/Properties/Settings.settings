@@ -1,0 +1,30 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="SMIZEE.Notification.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="NewFormsAlarmInterval" Type="System.Double" Scope="Application">
+      <Value Profile="(Default)">0.1</Value>
+    </Setting>
+    <Setting Name="NotificationTypeName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">SF.Expand.Notification.SmtpService, NotificationSmptService</Value>
+    </Setting>
+    <Setting Name="NotificationParams" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">smtp.gmail.com;587;softfinanca.hb@gmail.com;softfinanca.hb@gmail.com;_softfinanca_;EnableSsl</Value>
+    </Setting>
+    <Setting Name="NotificationSubject" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Sistema de Monitorização de Indicadores ZEE</Value>
+    </Setting>
+    <Setting Name="NotificationMessage" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Vimos por esta forma informar que o utilizar {0} com a empresa {1}, tem disponível o seguinte formulário para preenchimento :{2} - {3} </Value>
+    </Setting>
+    <Setting Name="LateFormsAlarmInterval" Type="System.Double" Scope="Application">
+      <Value Profile="(Default)">0.1</Value>
+    </Setting>
+    <Setting Name="ReferenceStartDate" Type="System.DateTime" Scope="Application">
+      <Value Profile="(Default)">2012-01-01</Value>
+    </Setting>
+    <Setting Name="LateNotificationMessage" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Vimos por esta forma informar que o utilizar {0} com a empresa {1}, tem em atraso o seguinte formulário para preenchimento :{2} - {3} </Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

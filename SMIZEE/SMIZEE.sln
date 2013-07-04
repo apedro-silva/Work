@@ -1,0 +1,119 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMIZEE", "SMIZEE\SMIZEE.csproj", "{57967B1D-BB08-4687-BE3A-164B62D0FE4A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMIZEE.Test", "SMIZEE.Test\SMIZEE.Test.csproj", "{F5D81055-75FB-4581-A0F7-8122A808CA58}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMIZEE.Models", "SMIZEE.Models\SMIZEE.Models.csproj", "{FD434B60-25DB-49CC-8D39-F93B01AD2004}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMIZEE.Notification", "SMIZEE.Notification\SMIZEE.Notification.csproj", "{837C5560-CB4E-4DBF-A880-5FDBC73CCB44}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logger", "Logger\Logger.csproj", "{FB7E4559-99FE-4DB4-B9A0-9767BAD0A920}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Notification", "Notification", "{7430A540-3584-4BD0-9A0D-A1B9CD654FC8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotificationServiceFactory", "Notification\NotificationServiceFactory\NotificationServiceFactory.csproj", "{ECDCBB8B-94C1-4E2A-8733-5A343BE13D14}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotificationSmptService", "Notification\NotificationSmptService\NotificationSmptService.csproj", "{F9A3D2DB-2076-4674-9342-EC0BD1BFA078}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotificationService", "Notification\NotificationService\NotificationService.csproj", "{1836EC62-0866-45F5-90B4-9B2201BFA0D5}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 9
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://africadb01:8080/tfs/tecangol
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = SMIZEE.Test\\SMIZEE.Test.csproj
+		SccProjectName1 = SMIZEE.Test
+		SccLocalPath1 = SMIZEE.Test
+		SccProjectUniqueName2 = SMIZEE\\SMIZEE.csproj
+		SccProjectName2 = SMIZEE
+		SccLocalPath2 = SMIZEE
+		SccProjectUniqueName3 = SMIZEE.Models\\SMIZEE.Models.csproj
+		SccProjectName3 = SMIZEE.Models
+		SccLocalPath3 = SMIZEE.Models
+		SccProjectUniqueName4 = SMIZEE.Notification\\SMIZEE.Notification.csproj
+		SccProjectName4 = SMIZEE.Notification
+		SccLocalPath4 = SMIZEE.Notification
+		SccProjectUniqueName5 = Logger\\Logger.csproj
+		SccProjectName5 = Logger
+		SccLocalPath5 = Logger
+		SccProjectUniqueName6 = Notification\\NotificationServiceFactory\\NotificationServiceFactory.csproj
+		SccProjectTopLevelParentUniqueName6 = SMIZEE.sln
+		SccProjectName6 = Notification/NotificationServiceFactory
+		SccLocalPath6 = Notification\\NotificationServiceFactory
+		SccProjectUniqueName7 = Notification\\NotificationSmptService\\NotificationSmptService.csproj
+		SccProjectTopLevelParentUniqueName7 = SMIZEE.sln
+		SccProjectName7 = Notification/NotificationSmptService
+		SccLocalPath7 = Notification\\NotificationSmptService
+		SccProjectUniqueName8 = Notification\\NotificationService\\NotificationService.csproj
+		SccProjectTopLevelParentUniqueName8 = SMIZEE.sln
+		SccProjectName8 = Notification/NotificationService
+		SccLocalPath8 = Notification\\NotificationService
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		AP|Any CPU = AP|Any CPU
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{57967B1D-BB08-4687-BE3A-164B62D0FE4A}.AP|Any CPU.ActiveCfg = AP|Any CPU
+		{57967B1D-BB08-4687-BE3A-164B62D0FE4A}.AP|Any CPU.Build.0 = AP|Any CPU
+		{57967B1D-BB08-4687-BE3A-164B62D0FE4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57967B1D-BB08-4687-BE3A-164B62D0FE4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57967B1D-BB08-4687-BE3A-164B62D0FE4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57967B1D-BB08-4687-BE3A-164B62D0FE4A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5D81055-75FB-4581-A0F7-8122A808CA58}.AP|Any CPU.ActiveCfg = Release|Any CPU
+		{F5D81055-75FB-4581-A0F7-8122A808CA58}.AP|Any CPU.Build.0 = Release|Any CPU
+		{F5D81055-75FB-4581-A0F7-8122A808CA58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5D81055-75FB-4581-A0F7-8122A808CA58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5D81055-75FB-4581-A0F7-8122A808CA58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5D81055-75FB-4581-A0F7-8122A808CA58}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD434B60-25DB-49CC-8D39-F93B01AD2004}.AP|Any CPU.ActiveCfg = Release|Any CPU
+		{FD434B60-25DB-49CC-8D39-F93B01AD2004}.AP|Any CPU.Build.0 = Release|Any CPU
+		{FD434B60-25DB-49CC-8D39-F93B01AD2004}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD434B60-25DB-49CC-8D39-F93B01AD2004}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD434B60-25DB-49CC-8D39-F93B01AD2004}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD434B60-25DB-49CC-8D39-F93B01AD2004}.Release|Any CPU.Build.0 = Release|Any CPU
+		{837C5560-CB4E-4DBF-A880-5FDBC73CCB44}.AP|Any CPU.ActiveCfg = Release|Any CPU
+		{837C5560-CB4E-4DBF-A880-5FDBC73CCB44}.AP|Any CPU.Build.0 = Release|Any CPU
+		{837C5560-CB4E-4DBF-A880-5FDBC73CCB44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{837C5560-CB4E-4DBF-A880-5FDBC73CCB44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{837C5560-CB4E-4DBF-A880-5FDBC73CCB44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{837C5560-CB4E-4DBF-A880-5FDBC73CCB44}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB7E4559-99FE-4DB4-B9A0-9767BAD0A920}.AP|Any CPU.ActiveCfg = Release|Any CPU
+		{FB7E4559-99FE-4DB4-B9A0-9767BAD0A920}.AP|Any CPU.Build.0 = Release|Any CPU
+		{FB7E4559-99FE-4DB4-B9A0-9767BAD0A920}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB7E4559-99FE-4DB4-B9A0-9767BAD0A920}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB7E4559-99FE-4DB4-B9A0-9767BAD0A920}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB7E4559-99FE-4DB4-B9A0-9767BAD0A920}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECDCBB8B-94C1-4E2A-8733-5A343BE13D14}.AP|Any CPU.ActiveCfg = Release|Any CPU
+		{ECDCBB8B-94C1-4E2A-8733-5A343BE13D14}.AP|Any CPU.Build.0 = Release|Any CPU
+		{ECDCBB8B-94C1-4E2A-8733-5A343BE13D14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECDCBB8B-94C1-4E2A-8733-5A343BE13D14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECDCBB8B-94C1-4E2A-8733-5A343BE13D14}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECDCBB8B-94C1-4E2A-8733-5A343BE13D14}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9A3D2DB-2076-4674-9342-EC0BD1BFA078}.AP|Any CPU.ActiveCfg = Release|Any CPU
+		{F9A3D2DB-2076-4674-9342-EC0BD1BFA078}.AP|Any CPU.Build.0 = Release|Any CPU
+		{F9A3D2DB-2076-4674-9342-EC0BD1BFA078}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9A3D2DB-2076-4674-9342-EC0BD1BFA078}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9A3D2DB-2076-4674-9342-EC0BD1BFA078}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9A3D2DB-2076-4674-9342-EC0BD1BFA078}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1836EC62-0866-45F5-90B4-9B2201BFA0D5}.AP|Any CPU.ActiveCfg = Release|Any CPU
+		{1836EC62-0866-45F5-90B4-9B2201BFA0D5}.AP|Any CPU.Build.0 = Release|Any CPU
+		{1836EC62-0866-45F5-90B4-9B2201BFA0D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1836EC62-0866-45F5-90B4-9B2201BFA0D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1836EC62-0866-45F5-90B4-9B2201BFA0D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1836EC62-0866-45F5-90B4-9B2201BFA0D5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{ECDCBB8B-94C1-4E2A-8733-5A343BE13D14} = {7430A540-3584-4BD0-9A0D-A1B9CD654FC8}
+		{F9A3D2DB-2076-4674-9342-EC0BD1BFA078} = {7430A540-3584-4BD0-9A0D-A1B9CD654FC8}
+		{1836EC62-0866-45F5-90B4-9B2201BFA0D5} = {7430A540-3584-4BD0-9A0D-A1B9CD654FC8}
+	EndGlobalSection
+EndGlobal
